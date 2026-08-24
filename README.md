@@ -4,7 +4,7 @@
 
 [简体中文](README.zh-CN.md) · [Project analysis (中文)](PROJECT_STRATEGY.zh-CN.md) · [Roadmap](ROADMAP.md) · [Contributing](CONTRIBUTING.md)
 
-China Travel Kit is an open, bilingual travel knowledge base with a zero-runtime-dependency Python query engine, CLI, HTTP API, and MCP server. It focuses on the parts of China travel that are difficult for international visitors to verify: reservations, passport-specific instructions, seasonal risks, accessibility, transport context, and data freshness.
+China Travel Kit is an open, bilingual travel knowledge base with a visual Chinese travel finder, zero-runtime-dependency Python query engine, CLI, HTTP API, and MCP server. It focuses on the parts of China travel that are difficult for international visitors to verify: reservations, passport-specific instructions, seasonal risks, accessibility, transport context, and data freshness.
 
 This is an **alpha dataset and developer preview**, not a booking service or a live navigation system. The included Beijing, Chengdu, and Lijiang records demonstrate the contribution model; they are not complete city guides.
 
@@ -32,6 +32,14 @@ python -m china_travel_kit search museum --city Beijing
 python -m china_travel_kit plan 丽江 --days 2 --interests mountain photography
 python -m china_travel_kit freshness
 ```
+
+Start the visual travel finder:
+
+```bash
+python -m china_travel_kit serve
+```
+
+Then open [http://127.0.0.1:8765/](http://127.0.0.1:8765/) to search attractions and generate itinerary cards in a responsive Chinese interface.
 
 Validate the data and run tests:
 

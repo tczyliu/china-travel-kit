@@ -2,7 +2,7 @@ cff-version: 1.2.0
 title: China Travel Kit
 message: If you use this project, please cite the repository and its contributors.
 type: software
-version: 0.1.0
+version: 0.2.0
 date-released: 2026-08-25
 license: MIT
 repository-code: https://github.com/tczyliu/china-travel-kit

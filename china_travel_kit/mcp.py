@@ -91,7 +91,7 @@ def handle_request(message: dict[str, Any]) -> dict[str, Any] | None:
             result = {
                 "protocolVersion": PROTOCOL_VERSION,
                 "capabilities": {"tools": {"listChanged": False}},
-                "serverInfo": {"name": "china-travel-kit", "version": "0.1.0"},
+                "serverInfo": {"name": "china-travel-kit", "version": "0.2.0"},
                 "instructions": "Sample, source-aware travel data. Verify stale records and all live conditions before travel.",
             }
         elif method == "ping":
@@ -131,4 +131,3 @@ def run(stdin: TextIO = sys.stdin, stdout: TextIO = sys.stdout) -> None:
         if response is not None:
             stdout.write(json.dumps(response, ensure_ascii=False, separators=(",", ":")) + "\n")
             stdout.flush()
-

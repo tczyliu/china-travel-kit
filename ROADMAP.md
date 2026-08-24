@@ -14,6 +14,7 @@ The roadmap optimizes for trustworthy data and contributor retention, not featur
 
 ## v0.2 — contribution flywheel
 
+- [x] Add a responsive visual travel finder and itinerary cards
 - [ ] Add a `new-city` scaffolding command
 - [ ] Validate against the full JSON Schema in CI
 - [ ] Add controlled vocabularies for categories, warnings, and accessibility
@@ -39,4 +40,3 @@ The roadmap optimizes for trustworthy data and contributor retention, not featur
 ## Explicitly deferred
 
 Live booking inventory, hotel rankings, visa eligibility decisions, and turn-by-turn navigation are deferred until the project has authoritative providers, sustainable maintenance, and clear liability boundaries.
-

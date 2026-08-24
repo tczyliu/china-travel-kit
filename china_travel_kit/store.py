@@ -29,7 +29,22 @@ class DataError(RuntimeError):
     """Raised when repository data cannot be loaded safely."""
 
 
+def resolve_web_dir() -> Path:
+    override = os.environ.get("CHINA_TRAVEL_KIT_WEB")
+    candidates = [
+        Path(override).expanduser() if override else None,
+        ROOT / "web",
+        Path(sys.prefix) / "share" / "china-travel-kit" / "web",
+    ]
+    for candidate in candidates:
+        if candidate and candidate.is_dir():
+            return candidate
+    attempted = ", ".join(str(path) for path in candidates if path)
+    raise DataError(f"Cannot find web assets. Tried: {attempted}")
+
+
 DATA_DIR = resolve_data_dir()
+WEB_DIR = resolve_web_dir()
 
 
 @lru_cache(maxsize=1)

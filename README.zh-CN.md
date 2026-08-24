@@ -2,7 +2,7 @@
 
 [English](README.md) · [项目分析](PROJECT_STRATEGY.zh-CN.md) · [路线图](ROADMAP.md) · [贡献指南](CONTRIBUTING.md)
 
-China Travel Kit 是一个面向入境中国旅行的中英双语开放数据项目。同一份带来源、带核验日期的数据，可以通过命令行、HTTP API 和 MCP 被人、应用与 AI 助手调用。
+China Travel Kit 是一个面向入境中国旅行的中英双语开放数据项目。同一份带来源、带核验日期的数据，可以通过中文可视化查询页、命令行、HTTP API 和 MCP 被人、应用与 AI 助手调用。
 
 当前版本是 **Alpha 数据集与开发者预览版**。北京、成都、丽江各有 2 个地点，用于展示完整的数据贡献闭环，并不代表完整攻略。
 
@@ -36,6 +36,8 @@ python -m unittest discover -s tests -v
 ```bash
 python -m china_travel_kit serve
 ```
+
+然后打开 [http://127.0.0.1:8765/](http://127.0.0.1:8765/)，即可通过中文表单筛选地点、查看来源与核验状态，并生成每日行程卡片。
 
 启动 MCP 服务器：
 

@@ -5,25 +5,45 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlparse
 
 from .query import freshness_report, plan_itinerary, search_spots
-from .store import load_cities
+from .store import WEB_DIR, load_cities
+
+
+WEB_ASSETS = {
+    "/": ("index.html", "text/html; charset=utf-8"),
+    "/index.html": ("index.html", "text/html; charset=utf-8"),
+    "/assets/styles.css": ("styles.css", "text/css; charset=utf-8"),
+    "/assets/app.js": ("app.js", "text/javascript; charset=utf-8"),
+}
+
+
+def read_web_asset(path: str) -> tuple[bytes, str]:
+    filename, content_type = WEB_ASSETS[path]
+    return (WEB_DIR / filename).read_bytes(), content_type
 
 
 class TravelHandler(BaseHTTPRequestHandler):
-    server_version = "ChinaTravelKit/0.1"
+    server_version = "ChinaTravelKit/0.2"
+
+    def _send_bytes(self, status: int, body: bytes, content_type: str, *, cache: bool = False) -> None:
+        self.send_response(status)
+        self.send_header("Content-Type", content_type)
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Cache-Control", "public, max-age=3600" if cache else "no-cache")
+        self.end_headers()
+        self.wfile.write(body)
 
     def _send(self, status: int, payload: object) -> None:
         body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
-        self.send_response(status)
-        self.send_header("Content-Type", "application/json; charset=utf-8")
-        self.send_header("Content-Length", str(len(body)))
-        self.end_headers()
-        self.wfile.write(body)
+        self._send_bytes(status, body, "application/json; charset=utf-8")
 
     def do_GET(self) -> None:  # noqa: N802 - required by BaseHTTPRequestHandler
         parsed = urlparse(self.path)
         query = parse_qs(parsed.query)
         try:
-            if parsed.path == "/health":
+            if parsed.path in WEB_ASSETS:
+                body, content_type = read_web_asset(parsed.path)
+                self._send_bytes(200, body, content_type, cache=parsed.path.startswith("/assets/"))
+            elif parsed.path == "/health":
                 self._send(200, {"status": "ok"})
             elif parsed.path == "/cities":
                 self._send(200, [{"id": city["id"], "name": city["name"]} for city in load_cities()])
@@ -44,7 +64,7 @@ class TravelHandler(BaseHTTPRequestHandler):
                 self._send(200, freshness_report(int(query.get("days", ["365"])[0])))
             else:
                 self._send(404, {"error": "not_found"})
-        except (ValueError, TypeError) as exc:
+        except (OSError, ValueError, TypeError) as exc:
             self._send(400, {"error": str(exc)})
 
     def log_message(self, format: str, *args: object) -> None:
@@ -60,4 +80,3 @@ def serve(host: str = "127.0.0.1", port: int = 8765) -> None:
         pass
     finally:
         server.server_close()
-

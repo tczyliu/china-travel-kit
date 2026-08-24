@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="带来源与核验日期的中国入境旅行查询工具">
+    <meta name="theme-color" content="#173a32">
+    <title>华行志 · China Travel Kit</title>
+    <link rel="stylesheet" href="/assets/styles.css?v=0.2.0">
+    <script src="/assets/app.js?v=0.2.0" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#query-studio">跳到查询工具</a>
+
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="主导航">
+        <a class="brand" href="/" aria-label="华行志首页">
+          <span class="brand-mark" aria-hidden="true">行</span>
+          <span>
+            <strong>华行志</strong>
+            <small>CHINA TRAVEL KIT</small>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="#query-studio">旅行查询</a>
+          <a href="#data-promise">数据原则</a>
+          <a class="github-link" href="https://github.com/tczyliu/china-travel-kit" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> 为第一次来中国的人准备</p>
+          <h1 id="hero-title">把复杂的中国旅行，<br><em>查成一份明白的答案。</em></h1>
+          <p class="hero-intro">按城市、兴趣和时间发现地点，生成可解释的行程草案。每条信息都保留来源与核验状态，不用过期答案假装实时。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#query-studio">开始查询 <span aria-hidden="true">↓</span></a>
+            <span class="service-state" id="service-status"><i></i> 正在连接本地数据</span>
+          </div>
+        </div>
+
+        <aside class="journey-note" aria-label="快速旅行灵感">
+          <div class="note-topline">
+            <span>TRAVEL NOTE · 01</span>
+            <span class="stamp">开源</span>
+          </div>
+          <p class="note-kicker">这次旅行，我想……</p>
+          <button class="inspiration" type="button" data-city="Lijiang" data-mode="plan">
+            <span class="inspiration-index">01</span>
+            <span><strong>在丽江慢慢走两天</strong><small>古城 · 山野 · 摄影</small></span>
+            <b aria-hidden="true">→</b>
+          </button>
+          <button class="inspiration" type="button" data-city="Chengdu" data-category="wildlife">
+            <span class="inspiration-index">02</span>
+            <span><strong>带家人去成都看熊猫</strong><small>动物 · 亲子 · 轻松</small></span>
+            <b aria-hidden="true">→</b>
+          </button>
+          <button class="inspiration" type="button" data-city="Beijing" data-category="museum">
+            <span class="inspiration-index">03</span>
+            <span><strong>读懂北京的历史建筑</strong><small>博物馆 · 建筑 · 摄影</small></span>
+            <b aria-hidden="true">→</b>
+          </button>
+          <div class="note-meta">
+            <span><strong id="city-count">3</strong> 个示例城市</span>
+            <span><strong id="spot-count">6</strong> 个严谨地点</span>
+            <span><strong>0</strong> 运行时依赖</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="query-section" id="query-studio" aria-labelledby="query-title">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span></span> TRAVEL FINDER</p>
+              <h2 id="query-title">你想怎么探索？</h2>
+            </div>
+            <p>当前为 3 城示例数据。价格、预约和实时交通请在出发前再次核验。</p>
+          </div>
+
+          <div class="query-workspace">
+            <div class="tabs" role="tablist" aria-label="查询方式">
+              <button class="tab is-active" id="search-tab" type="button" role="tab" aria-selected="true" aria-controls="search-panel" data-tab="search">
+                <span aria-hidden="true">⌕</span> 查找旅行地点
+              </button>
+              <button class="tab" id="plan-tab" type="button" role="tab" aria-selected="false" aria-controls="plan-panel" data-tab="plan">
+                <span aria-hidden="true">路</span> 生成行程草案
+              </button>
+            </div>
+
+            <div class="panel is-active" id="search-panel" role="tabpanel" aria-labelledby="search-tab">
+              <form id="search-form">
+                <div class="field field-wide">
+                  <label for="keyword">想看什么</label>
+                  <input id="keyword" name="keyword" type="search" placeholder="例如：古城、熊猫、博物馆">
+                </div>
+                <div class="field">
+                  <label for="search-city">目的城市</label>
+                  <select id="search-city" name="city"><option value="">全部城市</option></select>
+                </div>
+                <div class="field">
+                  <label for="category">旅行兴趣</label>
+                  <select id="category" name="category">
+                    <option value="">全部兴趣</option>
+                    <option value="history">历史文化</option>
+                    <option value="museum">博物馆</option>
+                    <option value="architecture">建筑</option>
+                    <option value="wildlife">动物生态</option>
+                    <option value="nature">自然风光</option>
+                    <option value="mountain">山地</option>
+                    <option value="photography">摄影</option>
+                    <option value="family">亲子</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="month">出行月份</label>
+                  <select id="month" name="month">
+                    <option value="">不限月份</option>
+                    <option value="1">1 月</option><option value="2">2 月</option>
+                    <option value="3">3 月</option><option value="4">4 月</option>
+                    <option value="5">5 月</option><option value="6">6 月</option>
+                    <option value="7">7 月</option><option value="8">8 月</option>
+                    <option value="9">9 月</option><option value="10">10 月</option>
+                    <option value="11">11 月</option><option value="12">12 月</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="max-hours">最多游玩时间</label>
+                  <select id="max-hours" name="max_hours">
+                    <option value="">不限时长</option>
+                    <option value="2">2 小时内</option>
+                    <option value="4">半天内</option>
+                    <option value="8">一天内</option>
+                  </select>
+                </div>
+                <div class="form-actions">
+                  <label class="check-control"><input id="free-only" name="free" type="checkbox"><span>只看免费地点</span></label>
+                  <div>
+                    <button class="button button-quiet" id="reset-search" type="button">清空</button>
+                    <button class="button button-primary" type="submit">查询地点 <span aria-hidden="true">→</span></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="panel" id="plan-panel" role="tabpanel" aria-labelledby="plan-tab" hidden>
+              <form id="plan-form">
+                <div class="field">
+                  <label for="plan-city">选择城市</label>
+                  <select id="plan-city" name="city" required><option value="">请选择城市</option></select>
+                </div>
+                <div class="field">
+                  <label for="plan-days">旅行天数</label>
+                  <select id="plan-days" name="days">
+                    <option value="1">1 天</option><option value="2" selected>2 天</option>
+                    <option value="3">3 天</option><option value="4">4 天</option>
+                    <option value="5">5 天</option><option value="6">6 天</option>
+                    <option value="7">7 天</option>
+                  </select>
+                </div>
+                <fieldset class="interest-field">
+                  <legend>偏好的旅行主题</legend>
+                  <div class="interest-chips">
+                    <label><input type="checkbox" name="interests" value="history"><span>历史</span></label>
+                    <label><input type="checkbox" name="interests" value="photography"><span>摄影</span></label>
+                    <label><input type="checkbox" name="interests" value="nature"><span>自然</span></label>
+                    <label><input type="checkbox" name="interests" value="mountain"><span>山野</span></label>
+                    <label><input type="checkbox" name="interests" value="family"><span>亲子</span></label>
+                    <label><input type="checkbox" name="interests" value="architecture"><span>建筑</span></label>
+                  </div>
+                </fieldset>
+                <div class="form-actions form-actions-end">
+                  <button class="button button-primary" type="submit">生成行程 <span aria-hidden="true">→</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="city-shortcuts" aria-label="城市快捷入口">
+            <span>快速查看</span>
+            <div id="city-shortcut-list"></div>
+          </div>
+
+          <section class="results-section" aria-labelledby="results-title">
+            <div class="results-heading">
+              <div>
+                <p class="results-label">QUERY RESULT</p>
+                <h3 id="results-title">正在载入旅行地点</h3>
+              </div>
+              <span class="result-count" id="result-count" aria-live="polite">—</span>
+            </div>
+            <div id="results" class="results-grid" aria-live="polite" aria-busy="true">
+              <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="promise-section shell" id="data-promise" aria-labelledby="promise-title">
+        <div class="promise-intro">
+          <p class="eyebrow"><span></span> OPEN DATA, HONEST ANSWERS</p>
+          <h2 id="promise-title">不知道，就明确说不知道。</h2>
+          <p>旅行规则变化很快。项目宁可显示“需要核验”，也不会用一个看似完整、实际过时的数字误导你。</p>
+        </div>
+        <div class="promise-list">
+          <article><span>01</span><div><h3>来源可追溯</h3><p>地点卡片保留官方或权威来源，方便出发前复核。</p></div></article>
+          <article><span>02</span><div><h3>核验日期可见</h3><p>未核验和超过期限的数据不会藏在结果里。</p></div></article>
+          <article><span>03</span><div><h3>路线只是草案</h3><p>不虚构实时路况、预约余量或精确通勤分钟数。</p></div></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer-inner">
+        <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true">行</span><span><strong>华行志</strong><small>CHINA TRAVEL KIT</small></span></div>
+        <p>开源的中国入境旅行知识工具 · 当前为 Alpha 示例数据</p>
+        <a href="https://github.com/tczyliu/china-travel-kit" target="_blank" rel="noreferrer">查看源代码 ↗</a>
+      </div>
+    </footer>
+  </body>
+</html>

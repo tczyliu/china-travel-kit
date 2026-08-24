@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "china-travel-kit"
-version = "0.1.0"
-description = "Source-aware China inbound travel data, CLI, HTTP API, and MCP server"
+version = "0.2.0"
+description = "Visual, source-aware China inbound travel data, CLI, HTTP API, and MCP server"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
@@ -28,3 +28,4 @@ packages = ["china_travel_kit"]
 [tool.setuptools.data-files]
 "share/china-travel-kit/data/cities" = ["data/cities/*.json"]
 "share/china-travel-kit/data/schema" = ["data/schema/*.json"]
+"share/china-travel-kit/web" = ["web/*.html", "web/*.css", "web/*.js"]
