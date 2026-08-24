@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "lijiang",
+  "name": {"zh": "丽江", "en": "Lijiang", "pinyin": "Lìjiāng"},
+  "province": {"zh": "云南", "en": "Yunnan"},
+  "overview": {
+    "zh": "高海拔古城与山地自然景观结合的滇西北目的地。",
+    "en": "A northwestern Yunnan destination combining a high-altitude old town with mountain landscapes."
+  },
+  "transport": {
+    "international_gateways": ["Lijiang Sanyi International Airport"],
+    "local": ["Bus", "Taxi and ride-hailing", "Tourist shuttle where available"],
+    "notes": ["Mountain travel times are weather-sensitive; verify routes locally."]
+  },
+  "stay_areas": [
+    {"name": "Dayan Old Town edge", "tradeoff": "Walkable access with easier luggage handling than inner lanes; can be noisy."},
+    {"name": "Shuhe", "tradeoff": "Quieter atmosphere; farther from some central services."}
+  ],
+  "seasonal_advice": [
+    {"months": [3, 4, 5], "clothing": "Layers, warm outerwear for mornings, and sun protection.", "gear": ["Sunscreen", "Hat"], "risks": ["Altitude", "Strong ultraviolet exposure"]},
+    {"months": [6, 7, 8, 9], "clothing": "Layers with a waterproof shell.", "gear": ["Rain protection", "Insect repellent"], "risks": ["Rain", "Slippery stone paths", "Altitude"]},
+    {"months": [10, 11], "clothing": "Warm layers for large day-night temperature changes.", "gear": ["Sunscreen"], "risks": ["Altitude", "Dry air"]},
+    {"months": [12, 1, 2], "clothing": "Insulated layers and wind protection.", "gear": ["Sunscreen"], "risks": ["Cold", "Altitude", "Strong ultraviolet exposure"]}
+  ],
+  "culture": ["Naxi heritage", "Dongba culture", "Traditional courtyard architecture"],
+  "foods": [
+    {"name": {"zh": "鸡豆凉粉", "en": "Jidou bean jelly"}, "dietary_notes": ["Confirm sauce ingredients and spice level."]},
+    {"name": {"zh": "丽江粑粑", "en": "Lijiang baba flatbread"}, "dietary_notes": ["Contains wheat; fillings vary."]}
+  ],
+  "emergency": [
+    {"service": "Police", "phone": "110"},
+    {"service": "Fire", "phone": "119"},
+    {"service": "Ambulance", "phone": "120"}
+  ],
+  "sources": ["https://www.lijiang.gov.cn/"],
+  "spots": [
+    {
+      "id": "yn-lj-old-town",
+      "name": {"zh": "丽江古城", "en": "Old Town of Lijiang", "pinyin": "Lìjiāng Gǔchéng"},
+      "aliases": ["Dayan Old Town", "大研古城"],
+      "categories": ["history", "world-heritage", "walking", "photography"],
+      "neighborhood": "Gucheng",
+      "location": {"lat": 26.8721, "lng": 100.2330, "altitude_m": 2400},
+      "duration_hours": [3, 8],
+      "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Fees and attraction tickets can change; verify locally and officially."},
+      "booking": {"required": null, "note": "Confirm any current entry or attraction reservations."},
+      "summary": {"zh": "以水系、石板巷道和纳西文化景观著称的世界遗产古城。", "en": "A World Heritage old town known for waterways, stone lanes, and Naxi cultural landscapes."},
+      "warnings": ["Altitude", "Uneven and slippery stone lanes", "Nighttime noise in busy areas"],
+      "accessibility": {"wheelchair": "limited", "note": "Historic paving and slopes create barriers."},
+      "sources": ["https://whc.unesco.org/en/list/811/"],
+      "last_verified": "2026-08-25"
+    },
+    {
+      "id": "yn-lj-yulong-snow-mountain",
+      "name": {"zh": "玉龙雪山", "en": "Jade Dragon Snow Mountain", "pinyin": "Yùlóng Xuěshān"},
+      "aliases": ["玉龙雪山"],
+      "categories": ["mountain", "nature", "photography"],
+      "neighborhood": "Yulong Naxi Autonomous County",
+      "location": {"lat": 27.0983, "lng": 100.1750},
+      "duration_hours": [5, 8],
+      "best_months": [1, 2, 3, 4, 5, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "Entry, shuttle, and ropeway products may be separate; verify officially."},
+      "booking": {"required": null, "note": "Confirm real-name booking, passport acceptance, and ropeway availability."},
+      "summary": {"zh": "丽江附近的高海拔山地景区。", "en": "A high-altitude mountain scenic area near Lijiang."},
+      "warnings": ["High altitude", "Rapid weather changes", "Ropeways may be suspended", "Not suitable for every health condition"],
+      "accessibility": {"wheelchair": "limited"},
+      "sources": ["https://www.lijiang.gov.cn/"],
+      "last_verified": null
+    }
+  ]
+}

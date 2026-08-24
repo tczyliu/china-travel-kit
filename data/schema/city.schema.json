@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/china-travel-kit/city.schema.json",
+  "title": "China Travel Kit city",
+  "type": "object",
+  "required": ["schema_version", "id", "name", "province", "overview", "sources", "spots"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "name": {"$ref": "#/$defs/name"},
+    "province": {"$ref": "#/$defs/name"},
+    "overview": {"type": "object", "required": ["zh", "en"]},
+    "sources": {"type": "array", "minItems": 1, "items": {"type": "string", "format": "uri"}},
+    "spots": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "categories", "neighborhood", "location", "duration_hours", "best_months", "ticket", "booking", "summary", "warnings", "sources", "last_verified"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "name": {"$ref": "#/$defs/name"},
+          "categories": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "duration_hours": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number", "minimum": 0}},
+          "best_months": {"type": "array", "items": {"type": "integer", "minimum": 1, "maximum": 12}},
+          "sources": {"type": "array", "minItems": 1, "items": {"type": "string", "format": "uri"}},
+          "last_verified": {"type": ["string", "null"], "format": "date"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "name": {
+      "type": "object",
+      "required": ["zh", "en"],
+      "properties": {"zh": {"type": "string"}, "en": {"type": "string"}, "pinyin": {"type": "string"}}
+    }
+  }
+}
+

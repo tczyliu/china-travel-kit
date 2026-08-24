@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "chengdu",
+  "name": {"zh": "成都", "en": "Chengdu", "pinyin": "Chéngdū"},
+  "province": {"zh": "四川", "en": "Sichuan"},
+  "overview": {
+    "zh": "以熊猫、川菜和慢节奏街区著称的西南交通枢纽。",
+    "en": "A southwestern transport hub known for pandas, Sichuan food, and relaxed neighborhoods."
+  },
+  "transport": {
+    "international_gateways": ["Chengdu Tianfu International Airport", "Chengdu Shuangliu International Airport"],
+    "local": ["Metro", "Bus", "Taxi and ride-hailing"],
+    "notes": ["Allow extra time when transferring between the two airports."]
+  },
+  "stay_areas": [
+    {"name": "Tianfu Square", "tradeoff": "Central and well connected; busy at peak times."},
+    {"name": "Yulin", "tradeoff": "Strong neighborhood food scene; less convenient for some northern sights."}
+  ],
+  "seasonal_advice": [
+    {"months": [3, 4, 5], "clothing": "Light layers.", "gear": ["Compact umbrella"], "risks": ["Variable rain"]},
+    {"months": [6, 7, 8], "clothing": "Light, breathable clothing.", "gear": ["Rain protection", "Insect repellent"], "risks": ["Heat", "Humidity"]},
+    {"months": [9, 10, 11], "clothing": "Layers and a light jacket.", "gear": ["Compact umbrella"], "risks": ["Damp weather"]},
+    {"months": [12, 1, 2], "clothing": "Warm layers and a water-resistant outer layer.", "gear": [], "risks": ["Damp cold"]}
+  ],
+  "culture": ["Teahouses", "Sichuan opera", "Three Kingdoms heritage"],
+  "foods": [
+    {"name": {"zh": "火锅", "en": "Sichuan hotpot"}, "dietary_notes": ["Ask for spice level and identify the broth base."]},
+    {"name": {"zh": "担担面", "en": "Dandan noodles"}, "dietary_notes": ["Common allergens include wheat, peanuts, sesame, and soy."]}
+  ],
+  "emergency": [
+    {"service": "Police", "phone": "110"},
+    {"service": "Fire", "phone": "119"},
+    {"service": "Ambulance", "phone": "120"}
+  ],
+  "sources": ["https://www.gochengdu.cn/"],
+  "spots": [
+    {
+      "id": "sc-cd-panda-base",
+      "name": {"zh": "成都大熊猫繁育研究基地", "en": "Chengdu Research Base of Giant Panda Breeding", "pinyin": "Chéngdū Dàxióngmāo Fányù Yánjiū Jīdì"},
+      "aliases": ["Chengdu Panda Base", "熊猫基地"],
+      "categories": ["wildlife", "family", "photography"],
+      "neighborhood": "Chenghua",
+      "location": {"lat": 30.7380, "lng": 104.1414},
+      "duration_hours": [3, 5],
+      "best_months": [1, 2, 3, 4, 5, 9, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "Verify the current ticket type and price officially."},
+      "booking": {"required": null, "note": "Check official reservation and passport instructions."},
+      "summary": {"zh": "以大熊猫保护、繁育和公众教育为主题的基地。", "en": "A conservation, breeding, and public education center focused on giant pandas."},
+      "warnings": ["Large site", "Outdoor heat", "Animals may be less active later in hot weather"],
+      "accessibility": {"wheelchair": "partial"},
+      "sources": ["https://www.panda.org.cn/en/"],
+      "last_verified": "2026-08-25"
+    },
+    {
+      "id": "sc-cd-wuhou-shrine",
+      "name": {"zh": "成都武侯祠", "en": "Wuhou Shrine", "pinyin": "Wǔhóu Cí"},
+      "aliases": ["武侯祠"],
+      "categories": ["history", "museum", "garden"],
+      "neighborhood": "Wuhou",
+      "location": {"lat": 30.6467, "lng": 104.0472},
+      "duration_hours": [2, 3],
+      "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Verify current prices officially."},
+      "booking": {"required": null, "note": "Confirm current reservation and passport rules."},
+      "summary": {"zh": "集中展示三国文化与蜀汉历史的祠庙博物馆。", "en": "A shrine and museum centered on Three Kingdoms culture and Shu Han history."},
+      "warnings": ["Can be crowded during public holidays"],
+      "accessibility": {"wheelchair": "partial"},
+      "sources": ["https://www.gochengdu.cn/"],
+      "last_verified": null
+    }
+  ]
+}

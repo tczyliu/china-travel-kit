@@ -1,0 +1,37 @@
+name: Add or expand a city
+description: Propose a sourced city or attraction data contribution
+title: "[Data]: "
+labels: ["data", "needs-review"]
+body:
+  - type: input
+    id: city
+    attributes:
+      label: City
+      description: Provide the Chinese and English city names.
+      placeholder: 丽江 / Lijiang
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed records
+      description: List the attractions, seasonal guidance, or practical details you can verify.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Authoritative sources
+      description: One URL per line. Prefer official operators, government open data, OSM, or Wikidata.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Contribution checks
+      options:
+        - label: I will write original summaries and will not copy commercial guides or reviews.
+          required: true
+        - label: I agree to license contributed data under CC BY-SA 4.0.
+          required: true
+

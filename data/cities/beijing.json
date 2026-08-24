@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "beijing",
+  "name": {"zh": "北京", "en": "Beijing", "pinyin": "Běijīng"},
+  "province": {"zh": "北京", "en": "Beijing"},
+  "overview": {
+    "zh": "适合第一次入境中国旅行者的国际门户，历史文化景点密集。",
+    "en": "A major international gateway with a dense concentration of historic sites."
+  },
+  "transport": {
+    "international_gateways": ["Beijing Capital International Airport", "Beijing Daxing International Airport"],
+    "local": ["Subway", "Bus", "Taxi and ride-hailing"],
+    "notes": ["Live routes and service hours are intentionally not stored; use an official local transport source."]
+  },
+  "stay_areas": [
+    {"name": "Dongcheng", "tradeoff": "Convenient for historic sights; often busier and more expensive."},
+    {"name": "Chaoyang", "tradeoff": "Broad dining and nightlife choice; longer trips to some old-city sights."}
+  ],
+  "seasonal_advice": [
+    {"months": [3, 4, 5], "clothing": "Layers and a light windproof jacket.", "gear": ["Sun protection"], "risks": ["Dry air", "Occasional dust"]},
+    {"months": [6, 7, 8], "clothing": "Light, breathable clothing.", "gear": ["Rain protection", "Sun protection"], "risks": ["Heat", "Heavy rain"]},
+    {"months": [9, 10, 11], "clothing": "Layers; add a warm jacket later in the season.", "gear": ["Moisturizer"], "risks": ["Large temperature swings"]},
+    {"months": [12, 1, 2], "clothing": "Insulated coat, gloves, and warm shoes.", "gear": ["Lip balm"], "risks": ["Cold", "Dry air"]}
+  ],
+  "culture": ["Imperial architecture", "Hutong neighborhoods", "Peking opera"],
+  "foods": [
+    {"name": {"zh": "北京烤鸭", "en": "Peking duck"}, "dietary_notes": ["Ask about sauces and allergens."]},
+    {"name": {"zh": "炸酱面", "en": "Noodles with soybean paste"}, "dietary_notes": ["Usually contains wheat and soy."]}
+  ],
+  "emergency": [
+    {"service": "Police", "phone": "110"},
+    {"service": "Fire", "phone": "119"},
+    {"service": "Ambulance", "phone": "120"}
+  ],
+  "sources": ["https://english.beijing.gov.cn/travellinginbeijing/"],
+  "spots": [
+    {
+      "id": "bj-dongcheng-palace-museum",
+      "name": {"zh": "故宫博物院", "en": "The Palace Museum", "pinyin": "Gùgōng Bówùyuàn"},
+      "aliases": ["Forbidden City", "故宫"],
+      "categories": ["history", "museum", "architecture", "photography"],
+      "neighborhood": "Dongcheng",
+      "location": {"lat": 39.9163, "lng": 116.3972},
+      "duration_hours": [3, 6],
+      "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Check the official ticket page; prices and policies can change."},
+      "booking": {"required": null, "note": "Confirm passport reservation rules and release windows on the official site."},
+      "summary": {"zh": "大型宫殿建筑群与博物馆。", "en": "A vast palace complex and museum."},
+      "warnings": ["Long walking distances", "Limited shade", "High holiday crowds"],
+      "accessibility": {"wheelchair": "partial", "note": "Confirm current accessible routes before visiting."},
+      "sources": ["https://intl.dpm.org.cn/visit.html"],
+      "last_verified": "2026-08-25"
+    },
+    {
+      "id": "bj-dongcheng-temple-of-heaven",
+      "name": {"zh": "天坛公园", "en": "Temple of Heaven", "pinyin": "Tiāntán Gōngyuán"},
+      "aliases": ["天坛"],
+      "categories": ["history", "park", "architecture", "photography"],
+      "neighborhood": "Dongcheng",
+      "location": {"lat": 39.8822, "lng": 116.4066},
+      "duration_hours": [2, 4],
+      "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Park and attraction tickets may be separate; verify officially."},
+      "booking": {"required": null, "note": "Confirm current reservation rules before visiting."},
+      "summary": {"zh": "以明清祭天建筑群闻名的大型公园。", "en": "A large park known for its Ming and Qing ceremonial architecture."},
+      "warnings": ["Large site", "Limited shade in some areas"],
+      "accessibility": {"wheelchair": "partial"},
+      "sources": ["https://english.beijing.gov.cn/specials/parktours/guidevisitors/202307/t20230704_3153650.html"],
+      "last_verified": null
+    }
+  ]
+}

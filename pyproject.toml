@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "china-travel-kit"
+version = "0.1.0"
+description = "Source-aware China inbound travel data, CLI, HTTP API, and MCP server"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "China Travel Kit contributors" }]
+keywords = ["china", "travel", "inbound-travel", "mcp", "open-data"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = []
+
+[project.scripts]
+china-travel = "china_travel_kit.cli:main"
+
+[tool.setuptools]
+packages = ["china_travel_kit"]
+
+[tool.setuptools.data-files]
+"share/china-travel-kit/data/cities" = ["data/cities/*.json"]
+"share/china-travel-kit/data/schema" = ["data/schema/*.json"]

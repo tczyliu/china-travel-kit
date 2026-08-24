@@ -1,0 +1,36 @@
+name: Report a data correction
+description: Flag stale, wrong, or unsafe travel information
+title: "[Correction]: "
+labels: ["data", "correction"]
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Record ID
+      placeholder: bj-dongcheng-palace-museum
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or outdated?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Current source or evidence
+      description: Include an official URL and the date you checked it when possible.
+    validations:
+      required: true
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Potential impact
+      options:
+        - Routine correction
+        - Could disrupt a trip
+        - Could affect traveler safety
+    validations:
+      required: true
+

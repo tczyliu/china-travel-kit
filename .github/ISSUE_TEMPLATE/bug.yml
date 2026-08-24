@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a reproducible problem in the CLI, API, validation, or MCP server
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: Python 3.13.1
+    validations:
+      required: true
+
