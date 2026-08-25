@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "id": "shenzhen",
+  "name": {"zh": "深圳", "en": "Shenzhen", "pinyin": "Shēnzhèn"},
+  "province": {"zh": "广东", "en": "Guangdong"},
+  "overview": {"zh": "连接香港的现代滨海城市，主题景区、城市公园、生态园林和当代公共空间较丰富。", "en": "A modern coastal city linked to Hong Kong, with theme attractions, urban parks, botanical landscapes, and contemporary public spaces."},
+  "weather": {"forecast_url": "https://www.weather.com.cn/weather/101280601.shtml", "warnings_url": "https://www.nmc.cn/publish/alarm.html", "provider": {"zh": "中国气象局公共气象服务", "en": "China Meteorological Administration public weather service"}, "note": {"zh": "查看深圳实时预报后，再到中央气象台核验暴雨、强对流和台风等预警。", "en": "Check Shenzhen's live forecast, then review rainstorm, severe-weather, and typhoon alerts from the National Meteorological Center."}, "last_verified": "2026-08-25"},
+  "tourism_portals": [{"name": {"zh": "深圳市文化广电旅游体育局", "en": "Shenzhen Municipal Bureau of Culture, Radio, Television, Tourism and Sports"}, "url": "https://wtl.sz.gov.cn/", "operator": {"zh": "深圳市文化广电旅游体育局", "en": "Shenzhen Municipal Bureau of Culture, Radio, Television, Tourism and Sports"}, "use_for": {"zh": "查看深圳文化、旅游、体育资讯、活动和政务公告。", "en": "Use for Shenzhen culture, tourism, sports news, events, and government notices."}, "last_verified": "2026-08-25"}],
+  "transport": {"international_gateways": [{"zh": "深圳宝安国际机场", "en": "Shenzhen Bao'an International Airport"}, {"zh": "深圳北站高速铁路枢纽", "en": "Shenzhen North high-speed railway hub"}, {"zh": "与香港连接的陆路口岸（规则和开放时间需实时核验）", "en": "Land crossings to Hong Kong, with rules and hours requiring live checks"}], "local": [{"zh": "地铁", "en": "Metro"}, {"zh": "公交车", "en": "Bus"}, {"zh": "出租车和网约车", "en": "Taxi and ride-hailing"}], "notes": [{"zh": "深圳东西跨度较大，东部华侨城、盐田海岸与南山主题景区不宜在同一天密集往返。", "en": "Shenzhen stretches far east to west; OCT East and the Yantian coast should not be packed into the same day as Nanshan theme attractions."}, {"zh": "跨境交通、口岸资格和签注不属于本静态数据范围。", "en": "Cross-border transport, entry eligibility, and visa endorsements are outside this static dataset."}]},
+  "stay_areas": [
+    {"id": "nanshan-oct", "name": {"zh": "南山华侨城及深圳湾", "en": "Nanshan OCT and Shenzhen Bay"}, "tradeoff": {"zh": "主题景区和滨海公共空间方便；去东部景区距离很远。", "en": "Convenient for theme attractions and waterfront public space; very far from eastern attractions."}},
+    {"id": "futian", "name": {"zh": "福田中心区", "en": "Futian CBD"}, "tradeoff": {"zh": "城市交通和跨区中转方便，但不是多数大型景区的门口。", "en": "Good for city transport and cross-city transfers, but not at the entrance to most major attractions."}},
+    {"id": "yantian", "name": {"zh": "盐田", "en": "Yantian"}, "tradeoff": {"zh": "适合东部山海与华侨城行程；前往南山和宝安耗时。", "en": "Best for eastern mountain-coast plans and OCT East; time-consuming for Nanshan and Bao'an."}}
+  ],
+  "seasonal_advice": [
+    {"months": [3, 4, 5], "clothing": {"zh": "轻薄透气并带防雨层。", "en": "Light, breathable clothing with rain protection."}, "gear": [{"zh": "雨具", "en": "Rain protection"}, {"zh": "驱蚊用品", "en": "Insect repellent"}], "risks": [{"zh": "高湿和强降雨", "en": "Humidity and heavy rain"}]},
+    {"months": [6, 7, 8, 9], "clothing": {"zh": "速干衣物，室内准备薄外套。", "en": "Quick-drying clothes with a light layer indoors."}, "gear": [{"zh": "防晒用品", "en": "Sun protection"}, {"zh": "补水用品", "en": "Water bottle"}, {"zh": "雨具和驱蚊用品", "en": "Rain protection and insect repellent"}], "risks": [{"zh": "高温高湿", "en": "Heat and humidity"}, {"zh": "台风或暴雨影响", "en": "Typhoon or rainstorm disruption"}]},
+    {"months": [10, 11], "clothing": {"zh": "轻便衣物，夜间和海边加薄层。", "en": "Light clothing with a thin evening or coastal layer."}, "gear": [{"zh": "防晒用品", "en": "Sun protection"}], "risks": [{"zh": "强日照", "en": "Strong sun"}]},
+    {"months": [12, 1, 2], "clothing": {"zh": "长袖和轻外套，冷空气到来时增加防风层。", "en": "Long sleeves and a light jacket, adding wind protection during cold fronts."}, "gear": [{"zh": "便携雨具", "en": "Compact rain protection"}], "risks": [{"zh": "气温波动和海风", "en": "Temperature swings and coastal wind"}]}
+  ],
+  "culture": [{"zh": "移民城市与改革开放历史", "en": "Migrant-city culture and reform-era history"}, {"zh": "客家文化与城中村更新", "en": "Hakka heritage and urban-village renewal"}, {"zh": "滨海城市公共生活", "en": "Coastal urban public life"}],
+  "foods": [
+    {"name": {"zh": "粤式点心", "en": "Cantonese dim sum"}, "dietary_notes": [{"zh": "常见虾、猪肉、小麦、花生和芝麻，过敏者逐项询问。", "en": "Shrimp, pork, wheat, peanuts, and sesame are common; ask item by item for allergies."}]},
+    {"name": {"zh": "客家酿豆腐", "en": "Hakka stuffed tofu"}, "dietary_notes": [{"zh": "通常含大豆和肉馅，汤汁或酱料成分需确认。", "en": "Usually contains soy and meat filling; confirm broth or sauce ingredients."}]},
+    {"name": {"zh": "海鲜", "en": "Seafood"}, "dietary_notes": [{"zh": "先确认计价单位、做法和过敏原；不要食用来源不明的野生动物。", "en": "Confirm pricing unit, preparation, and allergens; do not consume wildlife from unclear sources."}]}
+  ],
+  "emergency": [
+    {"service": {"zh": "报警求助", "en": "Police"}, "phone": "110", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "火警", "en": "Fire"}, "phone": "119", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "医疗急救", "en": "Ambulance"}, "phone": "120", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"}
+  ],
+  "sources": ["https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/index.html"],
+  "spots": [
+    {
+      "id": "gd-sz-nanshan-oct-resort", "name": {"zh": "深圳华侨城旅游度假区", "en": "Shenzhen OCT Tourist Resort", "pinyin": "Shēnzhèn Huáqiáochéng"}, "aliases": ["华侨城旅游度假区", "世界之窗", "锦绣中华民俗村", "深圳欢乐谷", "欢乐海岸", "Window of the World", "Splendid China Folk Village", "Shenzhen Happy Valley", "OCT Harbour"],
+      "categories": ["family", "culture", "park", "nightlife"], "neighborhood": "Nanshan", "area_id": "nanshan-oct", "neighborhood_name": {"zh": "南山华侨城", "en": "Nanshan OCT"}, "location": {"lat": 22.5362, "lng": 113.9802}, "duration_hours": [5, 8], "best_months": [1, 2, 3, 4, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "Window of the World, Splendid China Folk Village, Happy Valley, and other venues sell separate products."}, "booking": {"required": null, "note": "Choose one component venue first, then check its official ticketing and show schedules."},
+      "summary": {"zh": "官方 5A 名录对应的综合度假区，包含世界之窗、锦绣中华民俗村、欢乐谷、欢乐海岸等不同运营场所；一天通常只安排一个主园区。", "en": "The official 5A resort entry covers distinct venues including Window of the World, Splendid China Folk Village, Happy Valley, and OCT Harbour; usually choose one main park per day."}, "warnings": ["Large site", "Theme park queues", "Outdoor heat", "Multiple venues and paid experiences"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "每个园区开放、检修、演出和票务规则独立。", "en": "Each venue has independent opening, maintenance, show, and ticket rules."}},
+      "tourism_rating": {"level": "5A", "source": "https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/index.html", "last_verified": "2026-08-25", "scope_note": {"zh": "5A 等级适用于深圳华侨城旅游度假区整体；官方页列出世界之窗、锦绣中华民俗村、欢乐谷和欢乐海岸等组成部分，不表示每个场所单独为 5A。", "en": "The 5A rating applies to Shenzhen OCT Tourist Resort as a whole; the official page lists component venues but does not make each one a separate 5A site."}}, "sources": ["https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/index.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "gd-sz-longhua-mission-hills", "name": {"zh": "观澜湖休闲旅游区", "en": "Mission Hills Leisure Tourism Area", "pinyin": "Guānlánhú"}, "aliases": ["观澜湖", "Mission Hills Shenzhen"],
+      "categories": ["family", "park", "culture", "shopping"], "neighborhood": "Longhua", "area_id": "longhua-guanlan", "neighborhood_name": {"zh": "龙华观澜", "en": "Longhua Guanlan"}, "location": {"lat": 22.7438, "lng": 114.0482}, "duration_hours": [4, 8], "best_months": [1, 2, 3, 4, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "The resort combines separately operated leisure, sports, culture, and commercial activities."}, "booking": {"required": null, "note": "Identify the intended facility before checking access and reservation rules."},
+      "summary": {"zh": "位于龙华观澜的大型休闲旅游区，内部体验分散且部分为商业项目，不能按单一公园理解。", "en": "A large leisure tourism area in Guanlan with dispersed and partly commercial experiences; it is not a single park."}, "warnings": ["Large site", "Multiple venues and paid experiences", "Long transfer from city center"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "各设施需分别核验开放资格、预约和费用。", "en": "Check access eligibility, reservations, and fees for each facility."}},
+      "tourism_rating": {"level": "5A", "source": "https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/index.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应深圳官方名录中的观澜湖休闲旅游区整体。", "en": "The rating applies to Mission Hills Leisure Tourism Area as a whole in Shenzhen's official list."}}, "sources": ["https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/index.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "gd-sz-yantian-oct-east", "name": {"zh": "东部华侨城旅游度假区", "en": "OCT East Tourist Resort", "pinyin": "Dōngbù Huáqiáochéng"}, "aliases": ["东部华侨城", "OCT East"],
+      "categories": ["family", "nature", "mountain", "park"], "neighborhood": "Yantian", "area_id": "yantian", "neighborhood_name": {"zh": "盐田区", "en": "Yantian"}, "location": {"lat": 22.6307, "lng": 114.2850}, "duration_hours": [6, 8], "best_months": [1, 2, 3, 4, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "Operating zones and ticket products may change; verify the exact attraction."}, "booking": {"required": null, "note": "Confirm current open zones, maintenance, shuttle service, and last entry."},
+      "summary": {"zh": "盐田山地中的大型度假景区，市区往返和园内移动耗时较多，应独立安排一天。", "en": "A large mountain resort in Yantian; central-city transfers and internal movement make it a dedicated day trip."}, "warnings": ["Large site", "Long transfer from city center", "Rapid weather changes", "Steep paths"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "园区分区和运营项目可能调整，请勿依赖旧攻略。", "en": "Operating zones and activities may change; do not rely on old guides."}},
+      "tourism_rating": {"level": "4A", "source": "https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/index.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应深圳官方名录中的东部华侨城旅游度假区整体。", "en": "The rating applies to OCT East Tourist Resort as a whole in Shenzhen's official list."}}, "sources": ["https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/index.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "gd-sz-luohu-fairy-lake", "name": {"zh": "仙湖植物园", "en": "Fairy Lake Botanical Garden", "pinyin": "Xiānhú Zhíwùyuán"}, "aliases": ["深圳仙湖植物园", "弘法寺"],
+      "categories": ["garden", "nature", "religion", "photography", "family"], "neighborhood": "Luohu", "area_id": "luohu-east", "neighborhood_name": {"zh": "罗湖东部", "en": "Eastern Luohu"}, "location": {"lat": 22.5790, "lng": 114.1670}, "duration_hours": [3.5, 6], "best_months": [1, 2, 3, 4, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "Verify garden entry and internal transport charges."}, "booking": {"required": null, "note": "Confirm reservation, entry gate, internal shuttle, and temple access."},
+      "summary": {"zh": "结合植物专类园、湖区、山地步道和宗教场所的综合园区，入口选择和接驳会影响体力。", "en": "A broad garden of plant collections, lake, hill paths, and an active religious site; gate and shuttle choices affect effort."}, "warnings": ["Large site", "Steep paths", "Outdoor heat", "Respect active worship and dress expectations"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "园区、接驳和宗教活动安排需当天核验。", "en": "Verify garden, shuttle, and worship access for the day."}},
+      "tourism_rating": {"level": "4A", "source": "https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/index.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应深圳官方名录中的仙湖植物园。", "en": "The rating applies to Fairy Lake Botanical Garden in Shenzhen's official list."}}, "sources": ["https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/index.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "gd-sz-nanshan-safari-park", "name": {"zh": "深圳野生动物园", "en": "Shenzhen Safari Park", "pinyin": "Shēnzhèn Yěshēng Dòngwùyuán"}, "aliases": ["深圳市野生动物园"],
+      "categories": ["wildlife", "family", "nature", "park"], "neighborhood": "Nanshan Xili", "area_id": "nanshan-xili", "neighborhood_name": {"zh": "南山西丽", "en": "Nanshan Xili"}, "location": {"lat": 22.5994, "lng": 113.9732}, "duration_hours": [5, 8], "best_months": [1, 2, 3, 4, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "Entry and selected experiences may be separate."}, "booking": {"required": null, "note": "Check admission, show schedules, animal welfare notices, and transport."},
+      "summary": {"zh": "西丽湖片区的大型动物园，园区广且户外活动多，炎热月份需要降低强度。", "en": "A large zoo near Xili Lake with extensive outdoor areas; reduce intensity in hot months."}, "warnings": ["Large site", "Outdoor heat", "Animals may be less active later in hot weather"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "动物展示和演出可能受天气与运营调整影响。", "en": "Animal areas and presentations may change with weather and operations."}},
+      "tourism_rating": {"level": "4A", "source": "https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/index.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应深圳官方名录中的深圳市野生动物园。", "en": "The rating applies to Shenzhen Safari Park in Shenzhen's official list."}}, "sources": ["https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/index.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "gd-sz-baoan-happy-harbor", "name": {"zh": "欢乐港湾旅游景区", "en": "Happy Harbor Tourism Area", "pinyin": "Huānlè Gǎngwān"}, "aliases": ["欢乐港湾", "湾区之光摩天轮", "Happy Harbor"],
+      "categories": ["park", "nightlife", "photography", "family", "shopping"], "neighborhood": "Bao'an", "area_id": "baoan-center", "neighborhood_name": {"zh": "宝安中心区", "en": "Bao'an Center"}, "location": {"lat": 22.5531, "lng": 113.8877}, "duration_hours": [2, 4], "best_months": [1, 2, 3, 4, 10, 11, 12],
+      "ticket": {"price_cny": 0, "note": "Public waterfront areas are generally free; rides, performances, and businesses charge separately."}, "booking": {"required": null, "note": "Check individual attraction and event rules."},
+      "summary": {"zh": "由滨海公园、商业、演艺与摩天轮等组成的开放式片区，适合傍晚到夜间。", "en": "An open waterfront district of park space, commerce, performances, and a Ferris wheel, best from late afternoon into evening."}, "warnings": ["High holiday crowds", "Event access can change", "Multiple venues and paid experiences"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "公共空间、摩天轮和演出各自有运营安排。", "en": "Public space, Ferris wheel, and performances have separate operations."}},
+      "tourism_rating": {"level": "4A", "source": "https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/index.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应深圳官方名录中的欢乐港湾旅游景区整体。", "en": "The rating applies to Happy Harbor Tourism Area as a whole in Shenzhen's official list."}}, "sources": ["https://wtl.sz.gov.cn/ggfw/lyl/jqjdylb/index.html"], "last_verified": "2026-08-25"
+    }
+  ]
+}

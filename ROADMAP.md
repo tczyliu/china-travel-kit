@@ -10,11 +10,16 @@ The roadmap optimizes for trustworthy data and contributor retention, not featur
 - [x] Local HTTP API
 - [x] Read-only MCP server
 - [x] Tests, CI, contribution guide, and issue forms
-- [ ] Independent review of all six sample records by local contributors
+- [ ] Independent review of all sample records by local contributors
 
 ## v0.2 — contribution flywheel
 
 - [x] Add a responsive visual travel finder and itinerary cards
+- [x] Add an Agent Skill entrypoint with progressive safety and itinerary references
+- [x] Add bilingual visitor-area discovery
+- [x] Add monthly preparation and sourced emergency tools across CLI, HTTP, and MCP
+- [x] Add explainable requirement matching across the visual UI, CLI, HTTP, and MCP
+- [x] Expand to 8 cities and 56 places with sourced 5A/4A rating scope
 - [ ] Add a `new-city` scaffolding command
 - [ ] Validate against the full JSON Schema in CI
 - [ ] Add controlled vocabularies for categories, warnings, and accessibility

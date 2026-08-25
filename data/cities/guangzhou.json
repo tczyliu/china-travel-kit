@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "id": "guangzhou",
+  "name": {"zh": "广州", "en": "Guangzhou", "pinyin": "Guǎngzhōu"},
+  "province": {"zh": "广东", "en": "Guangdong"},
+  "overview": {"zh": "华南国际门户，以岭南建筑、广府饮食、城市山水和大型主题度假区见长。", "en": "A South China gateway known for Lingnan architecture, Cantonese food culture, urban landscapes, and a major theme resort."},
+  "weather": {"forecast_url": "https://www.weather.com.cn/weather/101280101.shtml", "warnings_url": "https://www.nmc.cn/publish/alarm.html", "provider": {"zh": "中国气象局公共气象服务", "en": "China Meteorological Administration public weather service"}, "note": {"zh": "查看广州实时预报后，再到中央气象台核验暴雨、强对流和台风等预警。", "en": "Check Guangzhou's live forecast, then review rainstorm, severe-weather, and typhoon alerts from the National Meteorological Center."}, "last_verified": "2026-08-25"},
+  "tourism_portals": [{"name": {"zh": "广州市文化广电旅游局", "en": "Guangzhou Municipal Culture, Radio, Television and Tourism Bureau"}, "url": "https://wglj.gz.gov.cn/", "operator": {"zh": "广州市文化广电旅游局", "en": "Guangzhou Municipal Culture, Radio, Television and Tourism Bureau"}, "use_for": {"zh": "查看文旅活动、行业通知、公共文化服务和旅游市场公告。", "en": "Use for cultural events, sector notices, public culture services, and tourism-market announcements."}, "last_verified": "2026-08-25"}],
+  "transport": {"international_gateways": [{"zh": "广州白云国际机场", "en": "Guangzhou Baiyun International Airport"}, {"zh": "广州南站高速铁路枢纽", "en": "Guangzhou South high-speed railway hub"}], "local": [{"zh": "地铁", "en": "Metro"}, {"zh": "公交车", "en": "Bus"}, {"zh": "出租车和网约车", "en": "Taxi and ride-hailing"}], "notes": [{"zh": "长隆位于番禺，白云山在市区北部，老城文化点集中在越秀、荔湾；不要在同一天来回跨越多个片区。", "en": "Chimelong is in Panyu, Baiyun Mountain is north of central Guangzhou, and old-city culture clusters in Yuexiu and Liwan; avoid crossing all zones in one day."}, {"zh": "本项目不保存实时交通班次和运营时间。", "en": "This project does not store live transport schedules or operating hours."}]},
+  "stay_areas": [
+    {"id": "yuexiu", "name": {"zh": "越秀", "en": "Yuexiu"}, "tradeoff": {"zh": "历史文化景点与交通选择集中，城市景观较密集。", "en": "Dense in historic sights and transport, with a busy urban setting."}},
+    {"id": "liwan", "name": {"zh": "荔湾", "en": "Liwan"}, "tradeoff": {"zh": "适合西关文化、美食和街区漫步；去广州塔或长隆较远。", "en": "Good for Xiguan culture, food, and walking; farther from Canton Tower and Chimelong."}},
+    {"id": "panyu-chimelong", "name": {"zh": "番禺长隆周边", "en": "Panyu near Chimelong"}, "tradeoff": {"zh": "主题度假行程最方便，但不适合作为老城观光的唯一住宿点。", "en": "Best for theme-resort days, but not ideal as the only base for old-city sightseeing."}}
+  ],
+  "seasonal_advice": [
+    {"months": [3, 4, 5], "clothing": {"zh": "轻薄分层并准备防雨外层。", "en": "Light layers with rain protection."}, "gear": [{"zh": "雨具", "en": "Rain protection"}, {"zh": "驱蚊用品", "en": "Insect repellent"}], "risks": [{"zh": "湿度较高和强降雨", "en": "High humidity and heavy rain"}]},
+    {"months": [6, 7, 8, 9], "clothing": {"zh": "速干透气衣物，室内准备薄外套。", "en": "Quick-drying breathable clothing with a light indoor layer."}, "gear": [{"zh": "防晒用品", "en": "Sun protection"}, {"zh": "补水用品", "en": "Water bottle"}, {"zh": "雨具和驱蚊用品", "en": "Rain protection and insect repellent"}], "risks": [{"zh": "高温高湿", "en": "Heat and humidity"}, {"zh": "暴雨或热带天气影响", "en": "Storm or tropical-weather disruption"}]},
+    {"months": [10, 11], "clothing": {"zh": "轻便衣物，早晚可加薄层。", "en": "Light clothing with a thin layer for mornings and evenings."}, "gear": [{"zh": "防晒用品", "en": "Sun protection"}], "risks": [{"zh": "天气仍可能偏热", "en": "Conditions may remain hot"}]},
+    {"months": [12, 1, 2], "clothing": {"zh": "长袖和轻中度保暖外套，湿冷天增加防风层。", "en": "Long sleeves and a light-to-medium jacket, adding wind protection on damp cold days."}, "gear": [{"zh": "便携雨具", "en": "Compact rain protection"}], "risks": [{"zh": "湿冷和气温波动", "en": "Damp cold and temperature swings"}]}
+  ],
+  "culture": [{"zh": "广府与岭南文化", "en": "Cantonese and Lingnan culture"}, {"zh": "西关大屋与骑楼街区", "en": "Xiguan houses and arcaded streets"}, {"zh": "粤剧和广东音乐", "en": "Cantonese opera and Guangdong music"}],
+  "foods": [
+    {"name": {"zh": "广式早茶", "en": "Cantonese dim sum and morning tea"}, "dietary_notes": [{"zh": "点心可能含虾、猪肉、小麦、花生或芝麻，过敏者逐项确认。", "en": "Items may contain shrimp, pork, wheat, peanuts, or sesame; confirm each dish for allergies."}]},
+    {"name": {"zh": "云吞面", "en": "Wonton noodles"}, "dietary_notes": [{"zh": "通常含小麦、猪肉或虾，汤底成分需确认。", "en": "Usually contains wheat, pork or shrimp; confirm broth ingredients."}]},
+    {"name": {"zh": "烧味", "en": "Cantonese roast meats"}, "dietary_notes": [{"zh": "酱汁常含大豆和糖，肉类与砧板交叉接触较常见。", "en": "Sauces often contain soy and sugar; shared preparation surfaces are common."}]}
+  ],
+  "emergency": [
+    {"service": {"zh": "报警求助", "en": "Police"}, "phone": "110", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "火警", "en": "Fire"}, "phone": "119", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "医疗急救", "en": "Ambulance"}, "phone": "120", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"}
+  ],
+  "sources": ["http://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/jqml/content/post_10559808.html"],
+  "spots": [
+    {
+      "id": "gd-gz-panyu-chimelong", "name": {"zh": "广州长隆旅游度假区", "en": "Guangzhou Chimelong Tourist Resort", "pinyin": "Guǎngzhōu Chánglóng"}, "aliases": ["广州长隆", "长隆", "Chimelong"],
+      "categories": ["family", "wildlife", "park", "nightlife"], "neighborhood": "Panyu", "area_id": "panyu-chimelong", "neighborhood_name": {"zh": "番禺长隆片区", "en": "Panyu Chimelong area"}, "location": {"lat": 23.0043, "lng": 113.3298}, "duration_hours": [6, 8], "best_months": [1, 2, 3, 4, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "The resort contains separately ticketed parks, hotels, and shows."}, "booking": {"required": null, "note": "Choose the specific park first, then verify passport ticketing and show times."},
+      "summary": {"zh": "由多个主题园区、演艺和住宿组成的大型度假区；一日通常只适合一个主园区。", "en": "A large resort of separately operated theme parks, shows, and hotels; one main park is usually enough for a day."}, "warnings": ["Large site", "Theme park queues", "Outdoor heat"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "须按具体园区核验开放、演出、检修和票种。", "en": "Verify opening, shows, maintenance, and ticket products for the specific park."}},
+      "tourism_rating": {"level": "5A", "source": "http://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/jqml/content/post_10559808.html", "last_verified": "2026-08-25", "scope_note": {"zh": "5A 等级适用于广州长隆旅游度假区整体，不表示其中每个单独园区各自为 5A。", "en": "The 5A rating applies to Guangzhou Chimelong Tourist Resort as a whole, not to every component park individually."}}, "sources": ["http://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/jqml/content/post_10559808.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "gd-gz-baiyun-mountain", "name": {"zh": "白云山风景名胜区", "en": "Baiyun Mountain Scenic Area", "pinyin": "Báiyún Shān"}, "aliases": ["白云山", "Baiyun Mountain"],
+      "categories": ["mountain", "nature", "park", "photography"], "neighborhood": "Baiyun", "area_id": "baiyun-mountain", "neighborhood_name": {"zh": "白云山区", "en": "Baiyun Mountain area"}, "location": {"lat": 23.1841, "lng": 113.2967}, "duration_hours": [4, 7], "best_months": [1, 2, 3, 4, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "Entrances, vehicles, ropeway, and individual sites may charge separately."}, "booking": {"required": null, "note": "Choose an entrance and route before checking current transport and entry rules."},
+      "summary": {"zh": "包含多个入口和游览分区的城市山地景区，路线选择会明显影响步行量。", "en": "An urban mountain scenic area with multiple entrances and zones; route choice substantially changes walking effort."}, "warnings": ["Large site", "Steep paths", "Outdoor heat", "Slippery paths after rain"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "暴雨、雷电或检修可能影响部分线路与索道。", "en": "Heavy rain, lightning, or maintenance may affect routes and ropeway service."}},
+      "tourism_rating": {"level": "5A", "source": "http://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/jqml/content/post_10559808.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应广州市官方名录中的白云山风景名胜区。", "en": "The rating applies to Baiyun Mountain Scenic Area in Guangzhou's official list."}}, "sources": ["http://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/jqml/content/post_10559808.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "gd-gz-haizhu-canton-tower", "name": {"zh": "广州塔", "en": "Canton Tower", "pinyin": "Guǎngzhōu Tǎ"}, "aliases": ["小蛮腰", "Canton Tower"],
+      "categories": ["architecture", "photography", "nightlife", "family"], "neighborhood": "Haizhu", "area_id": "haizhu-riverfront", "neighborhood_name": {"zh": "海珠滨江", "en": "Haizhu riverfront"}, "location": {"lat": 23.1064, "lng": 113.3245}, "duration_hours": [2, 4], "best_months": [1, 2, 3, 4, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "Observation levels and attraction bundles differ; verify the selected product."}, "booking": {"required": null, "note": "Confirm passport ticketing, timed entry, and visibility before booking."},
+      "summary": {"zh": "珠江边的标志性观景塔，适合与花城广场或珠江夜景分时组合。", "en": "A landmark observation tower by the Pearl River, suitable with Huacheng Square or an evening riverfront plan."}, "warnings": ["High holiday crowds", "Event access can change"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "高空项目可能受天气或检修影响。", "en": "High-level attractions may be affected by weather or maintenance."}},
+      "tourism_rating": {"level": "4A", "source": "http://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/jqml/content/post_10559808.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应广州市官方名录中的广州塔旅游区。", "en": "The rating applies to the Canton Tower tourism area in Guangzhou's official list."}}, "sources": ["http://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/jqml/content/post_10559808.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "gd-gz-liwan-chen-clan", "name": {"zh": "陈家祠旅游区", "en": "Chen Clan Ancestral Hall", "pinyin": "Chénjiācí"}, "aliases": ["陈家祠", "广东民间工艺博物馆", "Chen Clan Academy"],
+      "categories": ["history", "architecture", "museum", "art"], "neighborhood": "Liwan", "area_id": "liwan", "neighborhood_name": {"zh": "荔湾区", "en": "Liwan"}, "location": {"lat": 23.1293, "lng": 113.2391}, "duration_hours": [1.5, 3], "best_months": [1, 2, 3, 4, 5, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "Verify current museum admission and concession rules."}, "booking": {"required": null, "note": "Confirm closure days, passport entry, and reservation policy."},
+      "summary": {"zh": "以岭南祠堂建筑和木雕、石雕、陶塑等装饰艺术著称，可作为西关文化半日路线的核心。", "en": "A landmark of Lingnan ancestral-hall architecture and decorative arts, ideal as the anchor of a Xiguan half-day route."}, "warnings": ["Closed days and hours may change", "High holiday crowds"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "请核验闭馆日、展厅开放与预约规则。", "en": "Verify closure days, gallery access, and reservations."}},
+      "tourism_rating": {"level": "4A", "source": "http://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/jqml/content/post_10559808.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应广州市官方名录中的陈家祠旅游区。", "en": "The rating applies to the Chen Clan Ancestral Hall tourism area in Guangzhou's official list."}}, "sources": ["http://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/jqml/content/post_10559808.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "gd-gz-yuexiu-park", "name": {"zh": "越秀公园", "en": "Yuexiu Park", "pinyin": "Yuèxiù Gōngyuán"}, "aliases": ["五羊石像", "Yuexiu Park"],
+      "categories": ["park", "history", "nature", "walking", "photography"], "neighborhood": "Yuexiu", "area_id": "yuexiu", "neighborhood_name": {"zh": "越秀区", "en": "Yuexiu"}, "location": {"lat": 23.1416, "lng": 113.2614}, "duration_hours": [2, 4], "best_months": [1, 2, 3, 4, 10, 11, 12],
+      "ticket": {"price_cny": 0, "note": "General park access is commonly free; verify charges for any interior sites or events."}, "booking": {"required": null, "note": "Check event access and any interior-site rules."},
+      "summary": {"zh": "包含山体、湖区、五羊石像和历史遗存的大型市区公园，内部高差会增加步行量。", "en": "A large central park of hills, lakes, the Five Rams sculpture, and historic remains; elevation changes add walking effort."}, "warnings": ["Large site", "Outdoor heat", "Slippery paths after rain"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "活动或极端天气可能影响局部区域。", "en": "Events or extreme weather may affect local access."}},
+      "tourism_rating": {"level": "4A", "source": "http://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/jqml/content/post_10559808.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应广州市官方名录中的越秀公园。", "en": "The rating applies to Yuexiu Park in Guangzhou's official list."}}, "sources": ["http://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/jqml/content/post_10559808.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "gd-gz-liwan-yongqingfang", "name": {"zh": "永庆坊旅游区", "en": "Yongqingfang Tourism Area", "pinyin": "Yǒngqìngfāng"}, "aliases": ["永庆坊", "恩宁路"],
+      "categories": ["history", "walking", "local-life", "culture", "food", "photography"], "neighborhood": "Liwan", "area_id": "liwan", "neighborhood_name": {"zh": "荔湾区", "en": "Liwan"}, "location": {"lat": 23.1169, "lng": 113.2370}, "duration_hours": [2, 4], "best_months": [1, 2, 3, 4, 5, 10, 11, 12],
+      "ticket": {"price_cny": 0, "note": "Public streets are generally free; museums, performances, and shops set separate rules."}, "booking": {"required": null, "note": "Individual venues and performances may require separate booking."},
+      "summary": {"zh": "以恩宁路骑楼、西关街巷、非遗与商业更新为核心的开放街区；需要区分公共空间与单独运营场馆。", "en": "An open district combining Enning Road arcades, Xiguan lanes, heritage, and commercial renewal; distinguish public space from separately run venues."}, "warnings": ["High holiday crowds", "Respect residents and keep noise low in residential lanes"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "公共街区与内部场馆开放时间不同。", "en": "Public streets and interior venues follow different hours."}},
+      "tourism_rating": {"level": "4A", "source": "http://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/jqml/content/post_10559808.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应广州市官方名录中的永庆坊旅游区，不代表街区内每家场馆或商户。", "en": "The rating applies to Yongqingfang Tourism Area, not every venue or business within it."}}, "sources": ["http://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/jqml/content/post_10559808.html"], "last_verified": "2026-08-25"
+    }
+  ]
+}

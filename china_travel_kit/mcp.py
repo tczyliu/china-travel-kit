@@ -4,7 +4,15 @@ import json
 import sys
 from typing import Any, TextIO
 
-from .query import freshness_report, plan_itinerary, search_spots
+from .query import (
+    discover_areas,
+    freshness_report,
+    get_emergency_help,
+    get_trip_preparation,
+    plan_itinerary,
+    recommend_trip,
+    search_spots,
+)
 from .store import get_city
 
 
@@ -12,6 +20,32 @@ PROTOCOL_VERSION = "2025-11-25"
 
 
 TOOLS = [
+    {
+        "name": "recommend_trip",
+        "title": "Match traveler requirements",
+        "description": "Automatically rank covered cities and create an explainable trip draft from party size, dates, desired places, interests, pace, budget, mobility needs, and free text. Live bookings and transport still require verification.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "traveler_count": {"type": "integer", "minimum": 1, "maximum": 20, "default": 1},
+                "start_date": {"type": "string", "format": "date"},
+                "end_date": {"type": "string", "format": "date"},
+                "month": {"type": "integer", "minimum": 1, "maximum": 12},
+                "days": {"type": "integer", "minimum": 1, "maximum": 14},
+                "city": {"type": "string"},
+                "desired_places": {"type": "array", "items": {"type": "string"}},
+                "interests": {"type": "array", "items": {"type": "string"}},
+                "pace": {"enum": ["relaxed", "balanced", "full"], "default": "balanced"},
+                "budget": {"enum": ["budget", "moderate", "comfortable"], "default": "moderate"},
+                "mobility": {"enum": ["standard", "reduced"], "default": "standard"},
+                "children": {"type": "boolean", "default": False},
+                "origin_country": {"type": "string"},
+                "requirements": {"type": "string"},
+            },
+            "additionalProperties": False,
+        },
+        "annotations": {"readOnlyHint": True, "openWorldHint": False},
+    },
     {
         "name": "search_spots",
         "title": "Search China travel spots",
@@ -25,6 +59,21 @@ TOOLS = [
                 "month": {"type": "integer", "minimum": 1, "maximum": 12},
                 "free_only": {"type": "boolean"},
                 "max_hours": {"type": "number", "minimum": 0},
+            },
+            "additionalProperties": False,
+        },
+        "annotations": {"readOnlyHint": True, "openWorldHint": False},
+    },
+    {
+        "name": "discover_areas",
+        "title": "Discover visitor areas",
+        "description": "Find bilingual stay areas and attraction neighborhoods by province or city. This does not expose residential or personal data.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "keyword": {"type": "string"},
+                "city": {"type": "string"},
+                "province": {"type": "string"},
             },
             "additionalProperties": False,
         },
@@ -53,6 +102,33 @@ TOOLS = [
                 "days": {"type": "integer", "minimum": 1, "maximum": 14, "default": 1},
                 "interests": {"type": "array", "items": {"type": "string"}},
             },
+            "required": ["city"],
+            "additionalProperties": False,
+        },
+        "annotations": {"readOnlyHint": True, "openWorldHint": False},
+    },
+    {
+        "name": "get_trip_preparation",
+        "title": "Prepare for a China trip",
+        "description": "Get bilingual seasonal clothing, gear, risk, stay-area, food, culture, and transport guidance. This is not live weather or medical advice.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "city": {"type": "string"},
+                "month": {"type": "integer", "minimum": 1, "maximum": 12},
+            },
+            "required": ["city", "month"],
+            "additionalProperties": False,
+        },
+        "annotations": {"readOnlyHint": True, "openWorldHint": False},
+    },
+    {
+        "name": "get_emergency_help",
+        "title": "Get emergency guidance",
+        "description": "Return sourced emergency numbers and bilingual usage guidance for a covered city. Recheck local handling before travel.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {"city": {"type": "string"}},
             "required": ["city"],
             "additionalProperties": False,
         },
@@ -91,7 +167,7 @@ def handle_request(message: dict[str, Any]) -> dict[str, Any] | None:
             result = {
                 "protocolVersion": PROTOCOL_VERSION,
                 "capabilities": {"tools": {"listChanged": False}},
-                "serverInfo": {"name": "china-travel-kit", "version": "0.2.0"},
+                "serverInfo": {"name": "china-travel-kit", "version": "0.4.0"},
                 "instructions": "Sample, source-aware travel data. Verify stale records and all live conditions before travel.",
             }
         elif method == "ping":
@@ -103,11 +179,19 @@ def handle_request(message: dict[str, Any]) -> dict[str, Any] | None:
             args = params.get("arguments") or {}
             if name == "search_spots":
                 result = _tool_result(search_spots(**args))
+            elif name == "recommend_trip":
+                result = _tool_result(recommend_trip(**args))
+            elif name == "discover_areas":
+                result = _tool_result(discover_areas(**args))
             elif name == "get_city_guide":
                 city = get_city(args.get("city", ""))
                 result = _tool_result(city if city else {"error": "unknown_city"}, is_error=city is None)
             elif name == "plan_itinerary":
                 result = _tool_result(plan_itinerary(args["city"], args.get("days", 1), args.get("interests", [])))
+            elif name == "get_trip_preparation":
+                result = _tool_result(get_trip_preparation(args["city"], args["month"]))
+            elif name == "get_emergency_help":
+                result = _tool_result(get_emergency_help(args["city"]))
             elif name == "check_data_freshness":
                 result = _tool_result(freshness_report(args.get("max_age_days", 365)))
             else:

@@ -1,0 +1,87 @@
+{
+  "schema_version": 2,
+  "id": "shanghai",
+  "name": {"zh": "上海", "en": "Shanghai", "pinyin": "Shànghǎi"},
+  "province": {"zh": "上海", "en": "Shanghai"},
+  "overview": {"zh": "国际门户城市，适合把近代城市历史、博物馆、滨水建筑和亲子景点按片区组合。", "en": "An international gateway suited to area-based combinations of modern urban history, museums, waterfront architecture, and family attractions."},
+  "weather": {"forecast_url": "https://www.weather.com.cn/weather/101020100.shtml", "warnings_url": "https://www.nmc.cn/publish/alarm.html", "provider": {"zh": "中国气象局公共气象服务", "en": "China Meteorological Administration public weather service"}, "note": {"zh": "查看上海实时预报后，再到中央气象台核验降雨、强对流和台风等预警。", "en": "Check Shanghai's live forecast, then review rain, severe-weather, and typhoon alerts from the National Meteorological Center."}, "last_verified": "2026-08-25"},
+  "tourism_portals": [{"name": {"zh": "上海市文化和旅游局", "en": "Shanghai Municipal Administration of Culture and Tourism"}, "url": "https://whlyj.sh.gov.cn/", "operator": {"zh": "上海市文化和旅游局", "en": "Shanghai Municipal Administration of Culture and Tourism"}, "use_for": {"zh": "查看文旅要闻、A级景区、场馆指南、活动和临时闭园公告。", "en": "Use for tourism news, A-rated attractions, venue guides, events, and temporary closure notices."}, "last_verified": "2026-08-25"}],
+  "transport": {
+    "international_gateways": [{"zh": "上海浦东国际机场", "en": "Shanghai Pudong International Airport"}, {"zh": "上海虹桥国际机场及虹桥铁路枢纽", "en": "Shanghai Hongqiao International Airport and railway hub"}],
+    "local": [{"zh": "地铁", "en": "Metro"}, {"zh": "公交车", "en": "Bus"}, {"zh": "出租车和网约车", "en": "Taxi and ride-hailing"}, {"zh": "轮渡（部分滨江线路）", "en": "Ferry on selected river routes"}],
+    "notes": [{"zh": "浦东机场、虹桥枢纽和市中心之间距离较大；跨区景点不要仅凭直线距离安排。", "en": "Pudong Airport, Hongqiao hub, and central Shanghai are far apart; do not plan cross-city attractions by straight-line distance alone."}, {"zh": "本项目不保存实时班次、票价或末班车时间。", "en": "This project does not store live schedules, fares, or last-train times."}]
+  },
+  "stay_areas": [
+    {"id": "peoples-square", "name": {"zh": "人民广场及南京西路", "en": "People's Square and West Nanjing Road"}, "tradeoff": {"zh": "博物馆和多条地铁线集中，初访便利；核心商圈价格通常较高。", "en": "Convenient for museums and multiple metro lines; core commercial areas are often expensive."}},
+    {"id": "old-city", "name": {"zh": "豫园及老城厢周边", "en": "Yu Garden and Old City"}, "tradeoff": {"zh": "适合历史街区步行和夜景，但节假日人流大。", "en": "Good for historic walking and evening views, but very crowded on holidays."}},
+    {"id": "pudong-lujiazui", "name": {"zh": "浦东陆家嘴", "en": "Pudong Lujiazui"}, "tradeoff": {"zh": "滨江天际线和商务设施方便；前往浦西老城需过江。", "en": "Convenient for skyline and business facilities; old-city visits require crossing the river."}}
+  ],
+  "seasonal_advice": [
+    {"months": [3, 4, 5], "clothing": {"zh": "轻便分层，准备可收纳防雨外套。", "en": "Light layers with a packable rain shell."}, "gear": [{"zh": "雨具", "en": "Rain protection"}, {"zh": "舒适步行鞋", "en": "Comfortable walking shoes"}], "risks": [{"zh": "湿度和气温变化", "en": "Changing humidity and temperatures"}]},
+    {"months": [6, 7, 8, 9], "clothing": {"zh": "轻薄透气衣物，并为强空调准备薄外套。", "en": "Breathable clothes plus a light layer for strong indoor air conditioning."}, "gear": [{"zh": "雨具", "en": "Rain protection"}, {"zh": "驱蚊用品", "en": "Insect repellent"}, {"zh": "防晒用品", "en": "Sun protection"}], "risks": [{"zh": "高温高湿", "en": "Heat and humidity"}, {"zh": "强降雨或热带天气影响", "en": "Heavy rain or tropical-weather disruption"}]},
+    {"months": [10, 11], "clothing": {"zh": "分层穿着，临江时加防风外套。", "en": "Layers with a windproof jacket near the river."}, "gear": [{"zh": "保湿用品", "en": "Moisturizer"}], "risks": [{"zh": "昼夜温差", "en": "Day-night temperature changes"}]},
+    {"months": [12, 1, 2], "clothing": {"zh": "保暖外套和防风层，室内外温差需分层调节。", "en": "Warm outerwear and wind protection with removable indoor layers."}, "gear": [{"zh": "手套和围巾", "en": "Gloves and scarf"}], "risks": [{"zh": "湿冷和江风", "en": "Damp cold and river wind"}]}
+  ],
+  "culture": [{"zh": "海派文化与近代城市历史", "en": "Haipai culture and modern urban history"}, {"zh": "石库门街区", "en": "Shikumen neighborhoods"}, {"zh": "黄浦江滨水城市景观", "en": "Huangpu River waterfront cityscape"}],
+  "foods": [
+    {"name": {"zh": "小笼馒头（小笼包）", "en": "Xiaolongbao"}, "dietary_notes": [{"zh": "通常含小麦、猪肉和热汤汁；食用时防烫。", "en": "Usually contains wheat, pork, and hot broth; take care to avoid burns."}]},
+    {"name": {"zh": "生煎馒头", "en": "Shengjian pan-fried buns"}, "dietary_notes": [{"zh": "通常含小麦和肉馅，底部油煎。", "en": "Usually contains wheat and meat and is pan-fried in oil."}]},
+    {"name": {"zh": "葱油拌面", "en": "Scallion-oil noodles"}, "dietary_notes": [{"zh": "通常含小麦和酱油；素食者仍需确认油和配料。", "en": "Usually contains wheat and soy sauce; vegetarians should still confirm the oil and toppings."}]}
+  ],
+  "emergency": [
+    {"service": {"zh": "报警求助", "en": "Police"}, "phone": "110", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "火警", "en": "Fire"}, "phone": "119", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "医疗急救", "en": "Ambulance"}, "phone": "120", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"}
+  ],
+  "sources": ["https://whlyj.sh.gov.cn/ajjq/index.html", "https://whlyj.sh.gov.cn/5ajjq/20191008/0022-29706.html", "https://whlyj.sh.gov.cn/4ajjq/20191008/0022-28627.html"],
+  "spots": [
+    {
+      "id": "sh-pudong-oriental-pearl", "name": {"zh": "东方明珠广播电视塔", "en": "Oriental Pearl Radio & Television Tower", "pinyin": "Dōngfāng Míngzhū"}, "aliases": ["东方明珠", "Oriental Pearl Tower"],
+      "categories": ["architecture", "photography", "family", "nightlife"], "neighborhood": "Lujiazui", "area_id": "pudong-lujiazui", "neighborhood_name": {"zh": "浦东陆家嘴", "en": "Pudong Lujiazui"}, "location": {"lat": 31.2397, "lng": 121.4998}, "duration_hours": [2, 4], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Observation and exhibition products vary; verify the official product and price."}, "booking": {"required": null, "note": "Confirm passport ticketing, timed entry, and visibility before purchase."},
+      "summary": {"zh": "陆家嘴标志性观景与展陈综合体，能见度会显著影响观景体验。", "en": "A landmark Lujiazui observation and exhibition complex where visibility strongly affects the experience."}, "warnings": ["High holiday crowds", "Event access can change"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "请核验当天开放楼层、天气和检票时间。", "en": "Verify open levels, weather, and timed entry for the day."}},
+      "tourism_rating": {"level": "5A", "source": "https://whlyj.sh.gov.cn/5ajjq/20191008/0022-29706.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应上海官方名录中的东方明珠广播电视塔。", "en": "The rating applies to the Oriental Pearl Tower in Shanghai's official list."}}, "sources": ["https://whlyj.sh.gov.cn/5ajjq/20191008/0022-29706.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "sh-pudong-wild-animal-park", "name": {"zh": "上海野生动物园", "en": "Shanghai Wild Animal Park", "pinyin": "Shànghǎi Yěshēng Dòngwùyuán"}, "aliases": ["上海野生动物园"],
+      "categories": ["wildlife", "family", "nature", "park"], "neighborhood": "Pudong New Area", "area_id": "pudong-south", "neighborhood_name": {"zh": "浦东新区南部", "en": "Southern Pudong"}, "location": {"lat": 31.0554, "lng": 121.7216}, "duration_hours": [5, 8], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Entry and selected experiences may be priced separately."}, "booking": {"required": null, "note": "Verify admission, animal-area schedules, and transport before departure."},
+      "summary": {"zh": "位于浦东南部的大型动物主题景区，应单独安排一天并预留市区往返。", "en": "A large wildlife attraction in southern Pudong; dedicate a day and include central-city transfers."}, "warnings": ["Large site", "Long transfer from city center", "Outdoor heat"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "动物展示和园内交通可能因天气调整。", "en": "Animal presentations and internal transport may change with weather."}},
+      "tourism_rating": {"level": "5A", "source": "https://whlyj.sh.gov.cn/5ajjq/20191008/0022-29706.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应上海官方名录中的上海野生动物园。", "en": "The rating applies to Shanghai Wild Animal Park in the official list."}}, "sources": ["https://whlyj.sh.gov.cn/5ajjq/20191008/0022-29706.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "sh-huangpu-shanghai-museum", "name": {"zh": "上海博物馆", "en": "Shanghai Museum", "pinyin": "Shànghǎi Bówùguǎn"}, "aliases": ["上博", "Shanghai Museum People's Square"],
+      "categories": ["museum", "history", "art", "culture"], "neighborhood": "People's Square", "area_id": "peoples-square", "neighborhood_name": {"zh": "人民广场", "en": "People's Square"}, "location": {"lat": 31.2303, "lng": 121.4700}, "duration_hours": [2.5, 5], "best_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "General and special-exhibition policies may differ; verify officially."}, "booking": {"required": null, "note": "Confirm which building, passport reservation rules, and closure days."},
+      "summary": {"zh": "以中国古代艺术收藏为核心的博物馆；上海有不同馆址，预约时必须核对具体地点。", "en": "A major museum of ancient Chinese art; Shanghai has multiple museum buildings, so confirm the exact venue when booking."}, "warnings": ["Closed days and hours may change", "High holiday crowds"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "馆址、展览和预约规则须以官方当天信息为准。", "en": "Venue, exhibitions, and booking rules must be checked officially."}},
+      "tourism_rating": {"level": "4A", "source": "https://whlyj.sh.gov.cn/4ajjq/20191008/0022-28627.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应上海官方 4A 名录中的上海博物馆；本条位置为人民广场馆。", "en": "The rating follows Shanghai's official 4A entry for Shanghai Museum; this record locates the People's Square building."}}, "sources": ["https://whlyj.sh.gov.cn/4ajjq/20191008/0022-28627.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "sh-huangpu-yu-garden", "name": {"zh": "豫园", "en": "Yu Garden", "pinyin": "Yùyuán"}, "aliases": ["上海豫园", "Yuyuan Garden"],
+      "categories": ["garden", "history", "architecture", "photography"], "neighborhood": "Old City", "area_id": "old-city", "neighborhood_name": {"zh": "老城厢", "en": "Old City"}, "location": {"lat": 31.2272, "lng": 121.4921}, "duration_hours": [1.5, 3], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "The classical garden and surrounding commercial streets are different spaces; verify the garden ticket."}, "booking": {"required": null, "note": "Confirm current garden entry and last-admission time."},
+      "summary": {"zh": "江南古典园林；不要把收费园林本体与外围豫园商城、城隍庙街区混为一处。", "en": "A classical Jiangnan garden; distinguish the ticketed garden from the surrounding bazaar and City God Temple streets."}, "warnings": ["High holiday crowds", "Uneven and slippery stone lanes"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "请核验园林开放时间；外围街区开放逻辑不同。", "en": "Verify garden hours; surrounding streets operate separately."}},
+      "tourism_rating": {"level": "4A", "source": "https://whlyj.sh.gov.cn/4ajjq/20191008/0022-28627.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应上海官方名录中的豫园。", "en": "The rating applies to Yu Garden in Shanghai's official list."}}, "sources": ["https://whlyj.sh.gov.cn/4ajjq/20191008/0022-28627.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "sh-pudong-century-park", "name": {"zh": "世纪公园", "en": "Century Park", "pinyin": "Shìjì Gōngyuán"}, "aliases": ["上海世纪公园"],
+      "categories": ["park", "nature", "walking", "family"], "neighborhood": "Pudong", "area_id": "pudong-lujiazui", "neighborhood_name": {"zh": "浦东新区", "en": "Pudong New Area"}, "location": {"lat": 31.2153, "lng": 121.5503}, "duration_hours": [2, 4], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Verify current public-area and activity charges."}, "booking": {"required": null, "note": "Confirm current access for major events."},
+      "summary": {"zh": "浦东的大型城市公园，适合作为高强度博物馆或建筑行程后的缓冲活动。", "en": "A large Pudong city park suited to a lower-intensity break after museum or architecture-heavy days."}, "warnings": ["Large site", "Outdoor heat"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "大型活动可能调整部分区域通行。", "en": "Major events may change access to parts of the park."}},
+      "tourism_rating": {"level": "4A", "source": "https://whlyj.sh.gov.cn/4ajjq/20191008/0022-28627.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应上海官方名录中的世纪公园。", "en": "The rating applies to Century Park in Shanghai's official list."}}, "sources": ["https://whlyj.sh.gov.cn/4ajjq/20191008/0022-28627.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "sh-huangpu-urban-planning-exhibition", "name": {"zh": "上海城市规划展示馆", "en": "Shanghai Urban Planning Exhibition Center", "pinyin": "Shànghǎi Chéngshì Guīhuà Zhǎnshìguǎn"}, "aliases": ["上海城市规划馆", "城市规划展示馆"],
+      "categories": ["museum", "architecture", "family", "history"], "neighborhood": "People's Square", "area_id": "peoples-square", "neighborhood_name": {"zh": "人民广场", "en": "People's Square"}, "location": {"lat": 31.2333, "lng": 121.4692}, "duration_hours": [1.5, 3], "best_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "Verify current admission and exhibition policies."}, "booking": {"required": null, "note": "Check closure days and reservation requirements."},
+      "summary": {"zh": "了解上海城市演变、空间规划和城市模型的室内场馆，可与人民广场博物馆群同日安排。", "en": "An indoor introduction to Shanghai's urban evolution, planning, and city models, easy to combine with People's Square museums."}, "warnings": ["Closed days and hours may change"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "请确认闭馆日、展项维护和入场要求。", "en": "Confirm closure days, exhibit maintenance, and entry requirements."}},
+      "tourism_rating": {"level": "4A", "source": "https://whlyj.sh.gov.cn/4ajjq/20191008/0022-28627.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应上海官方名录中的上海城市规划展示馆。", "en": "The rating applies to the Shanghai Urban Planning Exhibition Center in the official list."}}, "sources": ["https://whlyj.sh.gov.cn/4ajjq/20191008/0022-28627.html"], "last_verified": "2026-08-25"
+    }
+  ]
+}

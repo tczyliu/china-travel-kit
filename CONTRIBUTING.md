@@ -12,11 +12,13 @@ Thank you for improving China travel information. Data-only pull requests are fi
 6. Run:
 
    ```bash
-   python -m china_travel_kit validate
-   python -m unittest discover -s tests -v
+   python3 -m china_travel_kit validate
+   python3 -m unittest discover -s tests -v
    ```
 
 7. Explain what you verified and what remains uncertain in the pull request.
+
+For A-level attractions and city expansion batches, follow [`references/data-expansion.md`](references/data-expansion.md). In particular, preserve the official rating scope: a resort or combined scenic area's rating must not be copied onto every component venue.
 
 Do not copy commercial travel guides, reviews, map databases with incompatible terms, or creator content. Links are not proof that copied text is reusable.
 
@@ -34,4 +36,3 @@ Keep changes small and directly tied to an issue. Add a failing test for a bug b
 - Chinese and English summaries communicate the same core fact.
 
 By contributing data, you agree to license it under CC BY-SA 4.0. Code contributions are licensed under MIT.
-

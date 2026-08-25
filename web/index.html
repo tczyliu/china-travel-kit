@@ -1,30 +1,38 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
+<head>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="带来源与核验日期的中国入境旅行查询工具">
-    <meta name="theme-color" content="#173a32">
-    <title>华行志 · China Travel Kit</title>
-    <link rel="stylesheet" href="/assets/styles.css?v=0.2.0">
-    <script src="/assets/app.js?v=0.2.0" defer></script>
+    <meta name="theme-color" content="#0f302b">
+    <title>华行志 · Huaxingzhi China Travel Planner</title>
+    <link rel="stylesheet" href="./styles.css?v=0.6.3">
+    <script src="./app.js?v=0.6.3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#query-studio">跳到查询工具</a>
 
     <header class="site-header">
       <nav class="nav-shell" aria-label="主导航">
-        <a class="brand" href="/" aria-label="华行志首页">
+        <a class="brand" href="./index.html" aria-label="华行志首页">
           <span class="brand-mark" aria-hidden="true">行</span>
           <span>
             <strong>华行志</strong>
             <small>CHINA TRAVEL KIT</small>
           </span>
         </a>
-        <div class="nav-links">
-          <a href="#query-studio">旅行查询</a>
-          <a href="#data-promise">数据原则</a>
-          <a class="github-link" href="https://github.com/tczyliu/china-travel-kit" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <div class="nav-actions">
+          <div class="nav-links">
+            <a href="#query-studio">规划旅程</a>
+            <a href="#data-promise">数据承诺</a>
+            <a class="github-link" href="https://github.com/tczyliu/china-travel-kit" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="language-switcher" role="group" aria-label="选择界面语言">
+            <span>语言</span>
+            <button type="button" data-language="zh" aria-pressed="true">中</button>
+            <button type="button" data-language="en" aria-pressed="false">EN</button>
+          </div>
         </div>
       </nav>
     </header>
@@ -32,21 +40,47 @@
     <main>
       <section class="hero shell" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> 为第一次来中国的人准备</p>
-          <h1 id="hero-title">把复杂的中国旅行，<br><em>查成一份明白的答案。</em></h1>
-          <p class="hero-intro">按城市、兴趣和时间发现地点，生成可解释的行程草案。每条信息都保留来源与核验状态，不用过期答案假装实时。</p>
+          <p class="eyebrow"><span></span> SOURCE-AWARE · BILINGUAL · OPEN DATA</p>
+          <h1 id="hero-title">把中国旅行，<br><em>查清楚再出发。</em></h1>
+          <p class="hero-intro">为第一次来中国的自由行游客整理城市、景点、路线与出发准备。每条信息保留中文地名、官方来源和核验状态。</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#query-studio">开始查询 <span aria-hidden="true">↓</span></a>
+            <a class="button button-primary" href="#query-studio">开始规划旅程 <span aria-hidden="true">↓</span></a>
             <span class="service-state" id="service-status"><i></i> 正在连接本地数据</span>
+          </div>
+          <div class="hero-proof" aria-label="项目特点">
+            <span><strong>双语</strong><small>中文地名 + English</small></span>
+            <span><strong>可追溯</strong><small>保留官方来源</small></span>
+            <span><strong>不过度承诺</strong><small>动态信息明确待核验</small></span>
+          </div>
+          <div class="travel-spectrum" aria-label="中国旅行色彩主题">
+            <span><i></i>宫墙红<small>HISTORY</small></span>
+            <span><i></i>湖山青<small>NATURE</small></span>
+            <span><i></i>琉璃蓝<small>CITY</small></span>
+            <span><i></i>银杏金<small>SEASON</small></span>
           </div>
         </div>
 
         <aside class="journey-note" aria-label="快速旅行灵感">
+          <div class="atlas-scene" aria-hidden="true">
+            <span class="atlas-sun"></span>
+            <span class="atlas-cloud atlas-cloud-one"></span>
+            <span class="atlas-cloud atlas-cloud-two"></span>
+            <span class="atlas-mountain atlas-mountain-back"></span>
+            <span class="atlas-mountain atlas-mountain-front"></span>
+            <svg class="atlas-route" viewBox="0 0 420 150" preserveAspectRatio="none">
+              <path d="M34 112 C92 45, 158 128, 222 67 S335 36, 390 74"></path>
+              <circle cx="34" cy="112" r="5"></circle><circle cx="222" cy="67" r="5"></circle><circle cx="390" cy="74" r="5"></circle>
+            </svg>
+            <span class="atlas-place atlas-place-one">北京<br><small>BEIJING</small></span>
+            <span class="atlas-place atlas-place-two">成都<br><small>CHENGDU</small></span>
+            <span class="atlas-place atlas-place-three">杭州<br><small>HANGZHOU</small></span>
+            <span class="atlas-caption">一张会回答问题的中国旅行图鉴</span>
+          </div>
           <div class="note-topline">
-            <span>TRAVEL NOTE · 01</span>
+            <span>TRAVEL FIELD NOTE · 01</span>
             <span class="stamp">开源</span>
           </div>
-          <p class="note-kicker">这次旅行，我想……</p>
+          <p class="note-kicker">从一个旅行愿望开始</p>
           <button class="inspiration" type="button" data-city="Lijiang" data-mode="plan">
             <span class="inspiration-index">01</span>
             <span><strong>在丽江慢慢走两天</strong><small>古城 · 山野 · 摄影</small></span>
@@ -63,8 +97,8 @@
             <b aria-hidden="true">→</b>
           </button>
           <div class="note-meta">
-            <span><strong id="city-count">3</strong> 个示例城市</span>
-            <span><strong id="spot-count">6</strong> 个严谨地点</span>
+            <span><strong id="city-count">8</strong> 个首批城市</span>
+            <span><strong id="spot-count">56</strong> 个严谨地点</span>
             <span><strong>0</strong> 运行时依赖</span>
           </div>
         </aside>
@@ -74,23 +108,129 @@
         <div class="shell">
           <div class="section-heading">
             <div>
-              <p class="eyebrow"><span></span> TRAVEL FINDER</p>
-              <h2 id="query-title">你想怎么探索？</h2>
+              <p class="eyebrow"><span></span> TRIP WORKBENCH</p>
+              <h2 id="query-title">从需求到一份可执行的草案</h2>
             </div>
-            <p>当前为 3 城示例数据。价格、预约和实时交通请在出发前再次核验。</p>
+            <p>当前覆盖 8 城、56 个地点，优先收录一线与重点旅游城市的 5A/4A 景区。价格、预约和实时交通请在出发前再次核验。</p>
+          </div>
+
+          <div class="route-legend" aria-label="从需求到旅行方案的步骤">
+            <span><b>01</b>告诉我们谁来</span><i></i><span><b>02</b>选择兴趣与节奏</span><i></i><span><b>03</b>获得可核验方案</span>
+          </div>
+
+          <div class="feature-availability" role="status">
+            <span><i></i>6 项功能全部可用</span>
+            <small>点击下方任意入口切换功能，查询结果会显示在同一结果区</small>
           </div>
 
           <div class="query-workspace">
             <div class="tabs" role="tablist" aria-label="查询方式">
-              <button class="tab is-active" id="search-tab" type="button" role="tab" aria-selected="true" aria-controls="search-panel" data-tab="search">
-                <span aria-hidden="true">⌕</span> 查找旅行地点
+              <button class="tab is-active" id="recommend-tab" type="button" role="tab" aria-selected="true" aria-controls="recommend-panel" data-tab="recommend">
+                <span aria-hidden="true">荐</span> 智能匹配方案 <small class="tab-status">可用</small>
+              </button>
+              <button class="tab" id="search-tab" type="button" role="tab" aria-selected="false" aria-controls="search-panel" data-tab="search">
+                <span aria-hidden="true">⌕</span> 查找旅行地点 <small class="tab-status">可用</small>
+              </button>
+              <button class="tab" id="areas-tab" type="button" role="tab" aria-selected="false" aria-controls="areas-panel" data-tab="areas">
+                <span aria-hidden="true">住</span> 查询住宿区域 <small class="tab-status">可用</small>
               </button>
               <button class="tab" id="plan-tab" type="button" role="tab" aria-selected="false" aria-controls="plan-panel" data-tab="plan">
-                <span aria-hidden="true">路</span> 生成行程草案
+                <span aria-hidden="true">路</span> 生成行程草案 <small class="tab-status">可用</small>
+              </button>
+              <button class="tab" id="prepare-tab" type="button" role="tab" aria-selected="false" aria-controls="prepare-panel" data-tab="prepare">
+                <span aria-hidden="true">备</span> 出发准备建议 <small class="tab-status">可用</small>
+              </button>
+              <button class="tab" id="emergency-tab" type="button" role="tab" aria-selected="false" aria-controls="emergency-panel" data-tab="emergency">
+                <span aria-hidden="true">助</span> 紧急求助信息 <small class="tab-status">可用</small>
               </button>
             </div>
 
-            <div class="panel is-active" id="search-panel" role="tabpanel" aria-labelledby="search-tab">
+            <div class="panel is-active" id="recommend-panel" role="tabpanel" aria-labelledby="recommend-tab">
+              <form id="recommend-form">
+                <div class="field">
+                  <label for="recommend-origin">从哪个国家出发</label>
+                  <input id="recommend-origin" name="origin_country" type="text" placeholder="例如：Singapore">
+                </div>
+                <div class="field">
+                  <label for="traveler-count">几个人</label>
+                  <input id="traveler-count" name="traveler_count" type="number" min="1" max="20" value="2" required>
+                </div>
+                <div class="field">
+                  <label for="trip-start">什么时候来</label>
+                  <input id="trip-start" name="start_date" type="date">
+                </div>
+                <div class="field">
+                  <label for="trip-end">什么时候离开</label>
+                  <input id="trip-end" name="end_date" type="date">
+                </div>
+                <div class="field">
+                  <label for="recommend-days">没有确定日期时玩几天</label>
+                  <select id="recommend-days" name="days">
+                    <option value="1">1 天</option><option value="2" selected>2 天</option>
+                    <option value="3">3 天</option><option value="4">4 天</option>
+                    <option value="5">5 天</option><option value="6">6 天</option>
+                    <option value="7">7 天</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="recommend-city">想去的城市</label>
+                  <select id="recommend-city" name="city"><option value="">让系统自动匹配</option></select>
+                </div>
+                <div class="field field-span-2">
+                  <label for="desired-places">明确想去的地方</label>
+                  <input id="desired-places" name="desired_places" type="text" placeholder="例如：熊猫基地、玉龙雪山；多个地点用逗号分隔">
+                </div>
+                <div class="field">
+                  <label for="recommend-pace">旅行节奏</label>
+                  <select id="recommend-pace" name="pace">
+                    <option value="relaxed">轻松 · 每天约 4 小时</option>
+                    <option value="balanced" selected>均衡 · 每天约 6 小时</option>
+                    <option value="full">充实 · 每天约 8 小时</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="recommend-budget">预算偏好</label>
+                  <select id="recommend-budget" name="budget">
+                    <option value="budget">尽量省钱</option>
+                    <option value="moderate" selected>适中</option>
+                    <option value="comfortable">舒适优先</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="recommend-mobility">步行与行动需求</label>
+                  <select id="recommend-mobility" name="mobility">
+                    <option value="standard" selected>普通步行强度</option>
+                    <option value="reduced">需要减少步行或台阶</option>
+                  </select>
+                </div>
+                <div class="field child-field">
+                  <label>同行人员</label>
+                  <label class="check-control"><input name="children" type="checkbox"><span>有儿童同行</span></label>
+                </div>
+                <fieldset class="interest-field recommend-interests">
+                  <legend>想体验什么</legend>
+                  <div class="interest-chips">
+                    <label><input type="checkbox" name="interests" value="history"><span>历史</span></label>
+                    <label><input type="checkbox" name="interests" value="food"><span>美食</span></label>
+                    <label><input type="checkbox" name="interests" value="wildlife"><span>动物</span></label>
+                    <label><input type="checkbox" name="interests" value="nature"><span>自然</span></label>
+                    <label><input type="checkbox" name="interests" value="photography"><span>摄影</span></label>
+                    <label><input type="checkbox" name="interests" value="culture"><span>文化</span></label>
+                    <label><input type="checkbox" name="interests" value="shopping"><span>购物</span></label>
+                    <label><input type="checkbox" name="interests" value="local-life"><span>本地生活</span></label>
+                  </div>
+                </fieldset>
+                <div class="field requirement-field">
+                  <label for="free-requirements">还有什么具体要求</label>
+                  <textarea id="free-requirements" name="requirements" rows="3" placeholder="例如：第一次来中国，想看熊猫、吃当地小吃，不想走太多路"></textarea>
+                </div>
+                <div class="form-actions form-actions-end">
+                  <button class="button button-primary" type="submit">自动查询并生成方案 <span aria-hidden="true">→</span></button>
+                </div>
+              </form>
+            </div>
+
+            <div class="panel" id="search-panel" role="tabpanel" aria-labelledby="search-tab" hidden>
               <form id="search-form">
                 <div class="field field-wide">
                   <label for="keyword">想看什么</label>
@@ -112,6 +252,23 @@
                     <option value="mountain">山地</option>
                     <option value="photography">摄影</option>
                     <option value="family">亲子</option>
+                    <option value="park">公园</option>
+                    <option value="garden">园林</option>
+                    <option value="walking">城市漫步</option>
+                    <option value="world-heritage">世界遗产</option>
+                    <option value="food">美食</option>
+                    <option value="nightlife">夜游</option>
+                    <option value="local-life">本地生活</option>
+                    <option value="literature">文学</option>
+                    <option value="archaeology">考古</option>
+                    <option value="teahouse">茶馆</option>
+                    <option value="religion">宗教文化</option>
+                    <option value="culture">文化</option>
+                    <option value="art">艺术</option>
+                    <option value="shopping">购物</option>
+                    <option value="industrial-heritage">工业遗产</option>
+                    <option value="music">音乐</option>
+                    <option value="engineering">工程</option>
                   </select>
                 </div>
                 <div class="field">
@@ -145,6 +302,26 @@
               </form>
             </div>
 
+            <div class="panel" id="areas-panel" role="tabpanel" aria-labelledby="areas-tab" hidden>
+              <form id="areas-form">
+                <div class="field field-wide">
+                  <label for="area-keyword">区域关键词</label>
+                  <input id="area-keyword" name="keyword" type="search" placeholder="例如：东城、古城、交通方便">
+                </div>
+                <div class="field">
+                  <label for="areas-city">目的城市</label>
+                  <select id="areas-city" name="city" data-city-select><option value="">全部城市</option></select>
+                </div>
+                <div class="field">
+                  <label for="area-province">省份</label>
+                  <input id="area-province" name="province" type="search" placeholder="例如：四川">
+                </div>
+                <div class="form-actions form-actions-end">
+                  <button class="button button-primary" type="submit">查询区域 <span aria-hidden="true">→</span></button>
+                </div>
+              </form>
+            </div>
+
             <div class="panel" id="plan-panel" role="tabpanel" aria-labelledby="plan-tab" hidden>
               <form id="plan-form">
                 <div class="field">
@@ -173,6 +350,42 @@
                 </fieldset>
                 <div class="form-actions form-actions-end">
                   <button class="button button-primary" type="submit">生成行程 <span aria-hidden="true">→</span></button>
+                </div>
+              </form>
+            </div>
+
+            <div class="panel" id="prepare-panel" role="tabpanel" aria-labelledby="prepare-tab" hidden>
+              <form id="prepare-form">
+                <div class="field">
+                  <label for="prepare-city">选择城市</label>
+                  <select id="prepare-city" name="city" data-city-select required><option value="">请选择城市</option></select>
+                </div>
+                <div class="field">
+                  <label for="prepare-month">出行月份</label>
+                  <select id="prepare-month" name="month" required>
+                    <option value="">请选择月份</option>
+                    <option value="1">1 月</option><option value="2">2 月</option>
+                    <option value="3">3 月</option><option value="4">4 月</option>
+                    <option value="5">5 月</option><option value="6">6 月</option>
+                    <option value="7">7 月</option><option value="8">8 月</option>
+                    <option value="9">9 月</option><option value="10">10 月</option>
+                    <option value="11">11 月</option><option value="12">12 月</option>
+                  </select>
+                </div>
+                <div class="form-actions form-actions-end">
+                  <button class="button button-primary" type="submit">查看准备建议 <span aria-hidden="true">→</span></button>
+                </div>
+              </form>
+            </div>
+
+            <div class="panel" id="emergency-panel" role="tabpanel" aria-labelledby="emergency-tab" hidden>
+              <form id="emergency-form">
+                <div class="field">
+                  <label for="emergency-city">所在城市</label>
+                  <select id="emergency-city" name="city" data-city-select required><option value="">请选择城市</option></select>
+                </div>
+                <div class="form-actions form-actions-end">
+                  <button class="button button-primary" type="submit">查看求助信息 <span aria-hidden="true">→</span></button>
                 </div>
               </form>
             </div>
@@ -214,8 +427,8 @@
 
     <footer>
       <div class="shell footer-inner">
-        <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true">行</span><span><strong>华行志</strong><small>CHINA TRAVEL KIT</small></span></div>
-        <p>开源的中国入境旅行知识工具 · 当前为 Alpha 示例数据</p>
+        <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true">行</span><span><strong>华行志</strong><small>HUAXINGZHI · CHINA TRAVEL PLANNER</small></span></div>
+        <p>v0.4.0 Alpha · 开源的中国入境旅行知识工具 · 当前覆盖 8 城 56 个地点</p>
         <a href="https://github.com/tczyliu/china-travel-kit" target="_blank" rel="noreferrer">查看源代码 ↗</a>
       </div>
     </footer>

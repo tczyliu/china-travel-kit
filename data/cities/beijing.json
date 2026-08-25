@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "beijing",
   "name": {"zh": "北京", "en": "Beijing", "pinyin": "Běijīng"},
   "province": {"zh": "北京", "en": "Beijing"},
@@ -7,32 +7,47 @@
     "zh": "适合第一次入境中国旅行者的国际门户，历史文化景点密集。",
     "en": "A major international gateway with a dense concentration of historic sites."
   },
+  "weather": {"forecast_url": "https://www.weather.com.cn/weather/101010100.shtml", "warnings_url": "https://www.nmc.cn/publish/alarm.html", "provider": {"zh": "中国气象局公共气象服务", "en": "China Meteorological Administration public weather service"}, "note": {"zh": "查看北京实时预报后，再到中央气象台核验全国及区域预警。", "en": "Check Beijing's live forecast, then review national and regional alerts from the National Meteorological Center."}, "last_verified": "2026-08-25"},
+  "tourism_portals": [{"name": {"zh": "北京市文化和旅游局", "en": "Beijing Municipal Bureau of Culture and Tourism"}, "url": "https://whlyj.beijing.gov.cn/", "operator": {"zh": "北京市文化和旅游局", "en": "Beijing Municipal Bureau of Culture and Tourism"}, "use_for": {"zh": "查看文旅新闻、公共服务、旅游信息和景区公告。", "en": "Use for culture and tourism news, public services, visitor information, and attraction notices."}, "last_verified": "2026-08-25"}],
   "transport": {
-    "international_gateways": ["Beijing Capital International Airport", "Beijing Daxing International Airport"],
-    "local": ["Subway", "Bus", "Taxi and ride-hailing"],
-    "notes": ["Live routes and service hours are intentionally not stored; use an official local transport source."]
+    "international_gateways": [{"zh": "北京首都国际机场", "en": "Beijing Capital International Airport"}, {"zh": "北京大兴国际机场", "en": "Beijing Daxing International Airport"}],
+    "local": [{"zh": "地铁", "en": "Subway"}, {"zh": "公交车", "en": "Bus"}, {"zh": "出租车和网约车", "en": "Taxi and ride-hailing"}],
+    "notes": [{"zh": "本项目不保存实时路线和运营时间，请使用当地官方交通来源核验。", "en": "Live routes and service hours are intentionally not stored; use an official local transport source."}]
   },
   "stay_areas": [
-    {"name": "Dongcheng", "tradeoff": "Convenient for historic sights; often busier and more expensive."},
-    {"name": "Chaoyang", "tradeoff": "Broad dining and nightlife choice; longer trips to some old-city sights."}
+    {
+      "id": "dongcheng",
+      "name": {"zh": "东城区", "en": "Dongcheng"},
+      "tradeoff": {"zh": "前往历史景点方便，但通常更拥挤、住宿价格也可能更高。", "en": "Convenient for historic sights; often busier and more expensive."}
+    },
+    {
+      "id": "chaoyang",
+      "name": {"zh": "朝阳区", "en": "Chaoyang"},
+      "tradeoff": {"zh": "餐饮和夜生活选择丰富，但前往部分老城景点时间较长。", "en": "Broad dining and nightlife choice; longer trips to some old-city sights."}
+    }
   ],
   "seasonal_advice": [
-    {"months": [3, 4, 5], "clothing": "Layers and a light windproof jacket.", "gear": ["Sun protection"], "risks": ["Dry air", "Occasional dust"]},
-    {"months": [6, 7, 8], "clothing": "Light, breathable clothing.", "gear": ["Rain protection", "Sun protection"], "risks": ["Heat", "Heavy rain"]},
-    {"months": [9, 10, 11], "clothing": "Layers; add a warm jacket later in the season.", "gear": ["Moisturizer"], "risks": ["Large temperature swings"]},
-    {"months": [12, 1, 2], "clothing": "Insulated coat, gloves, and warm shoes.", "gear": ["Lip balm"], "risks": ["Cold", "Dry air"]}
+    {"months": [3, 4, 5], "clothing": {"zh": "分层穿着并准备轻便防风外套。", "en": "Layers and a light windproof jacket."}, "gear": [{"zh": "防晒用品", "en": "Sun protection"}], "risks": [{"zh": "空气干燥", "en": "Dry air"}, {"zh": "偶有扬尘", "en": "Occasional dust"}]},
+    {"months": [6, 7, 8], "clothing": {"zh": "轻薄透气衣物。", "en": "Light, breathable clothing."}, "gear": [{"zh": "雨具", "en": "Rain protection"}, {"zh": "防晒用品", "en": "Sun protection"}], "risks": [{"zh": "高温", "en": "Heat"}, {"zh": "强降雨", "en": "Heavy rain"}]},
+    {"months": [9, 10, 11], "clothing": {"zh": "分层穿着，深秋增加保暖外套。", "en": "Layers; add a warm jacket later in the season."}, "gear": [{"zh": "保湿用品", "en": "Moisturizer"}], "risks": [{"zh": "昼夜温差大", "en": "Large temperature swings"}]},
+    {"months": [12, 1, 2], "clothing": {"zh": "保暖外套、手套和保暖鞋。", "en": "Insulated coat, gloves, and warm shoes."}, "gear": [{"zh": "润唇膏", "en": "Lip balm"}], "risks": [{"zh": "寒冷", "en": "Cold"}, {"zh": "空气干燥", "en": "Dry air"}]}
   ],
-  "culture": ["Imperial architecture", "Hutong neighborhoods", "Peking opera"],
+  "culture": [
+    {"zh": "皇家建筑", "en": "Imperial architecture"},
+    {"zh": "胡同街区", "en": "Hutong neighborhoods"},
+    {"zh": "京剧", "en": "Peking opera"}
+  ],
   "foods": [
-    {"name": {"zh": "北京烤鸭", "en": "Peking duck"}, "dietary_notes": ["Ask about sauces and allergens."]},
-    {"name": {"zh": "炸酱面", "en": "Noodles with soybean paste"}, "dietary_notes": ["Usually contains wheat and soy."]}
+    {"name": {"zh": "北京烤鸭", "en": "Peking duck"}, "dietary_notes": [{"zh": "请询问酱料配方和过敏原。", "en": "Ask about sauces and allergens."}]},
+    {"name": {"zh": "炸酱面", "en": "Noodles with soybean paste"}, "dietary_notes": [{"zh": "通常含有小麦和大豆。", "en": "Usually contains wheat and soy."}]}
   ],
   "emergency": [
-    {"service": "Police", "phone": "110"},
-    {"service": "Fire", "phone": "119"},
-    {"service": "Ambulance", "phone": "120"}
+    {"service": {"zh": "报警求助", "en": "Police"}, "phone": "110", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "火警", "en": "Fire"}, "phone": "119", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "医疗急救", "en": "Ambulance"}, "phone": "120", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "非紧急政务服务", "en": "Non-emergency government service"}, "phone": "+86-10-12345", "scope": "Beijing", "source": "https://english.beijing.gov.cn/12345hotline/", "last_verified": "2026-08-25"}
   ],
-  "sources": ["https://english.beijing.gov.cn/travellinginbeijing/"],
+  "sources": ["https://english.beijing.gov.cn/travellinginbeijing/", "https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html"],
   "spots": [
     {
       "id": "bj-dongcheng-palace-museum",
@@ -40,6 +55,8 @@
       "aliases": ["Forbidden City", "故宫"],
       "categories": ["history", "museum", "architecture", "photography"],
       "neighborhood": "Dongcheng",
+      "area_id": "dongcheng",
+      "neighborhood_name": {"zh": "东城区", "en": "Dongcheng"},
       "location": {"lat": 39.9163, "lng": 116.3972},
       "duration_hours": [3, 6],
       "best_months": [3, 4, 5, 9, 10, 11],
@@ -48,6 +65,7 @@
       "summary": {"zh": "大型宫殿建筑群与博物馆。", "en": "A vast palace complex and museum."},
       "warnings": ["Long walking distances", "Limited shade", "High holiday crowds"],
       "accessibility": {"wheelchair": "partial", "note": "Confirm current accessible routes before visiting."},
+      "tourism_rating": {"level": "5A", "source": "https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应北京市官方名录中的故宫博物院。", "en": "The rating applies to the Palace Museum entry in Beijing's official list."}},
       "sources": ["https://intl.dpm.org.cn/visit.html"],
       "last_verified": "2026-08-25"
     },
@@ -57,6 +75,8 @@
       "aliases": ["天坛"],
       "categories": ["history", "park", "architecture", "photography"],
       "neighborhood": "Dongcheng",
+      "area_id": "dongcheng",
+      "neighborhood_name": {"zh": "东城区", "en": "Dongcheng"},
       "location": {"lat": 39.8822, "lng": 116.4066},
       "duration_hours": [2, 4],
       "best_months": [3, 4, 5, 9, 10, 11],
@@ -65,8 +85,101 @@
       "summary": {"zh": "以明清祭天建筑群闻名的大型公园。", "en": "A large park known for its Ming and Qing ceremonial architecture."},
       "warnings": ["Large site", "Limited shade in some areas"],
       "accessibility": {"wheelchair": "partial"},
+      "tourism_rating": {"level": "5A", "source": "https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应北京市官方名录中的天坛公园。", "en": "The rating applies to Temple of Heaven Park in Beijing's official list."}},
       "sources": ["https://english.beijing.gov.cn/specials/parktours/guidevisitors/202307/t20230704_3153650.html"],
-      "last_verified": null
+      "last_verified": "2026-08-25"
+    },
+    {
+      "id": "bj-haidian-summer-palace",
+      "name": {"zh": "颐和园", "en": "Summer Palace", "pinyin": "Yíhéyuán"},
+      "aliases": ["颐和园", "Yiheyuan"],
+      "categories": ["history", "garden", "architecture", "world-heritage", "photography"],
+      "neighborhood": "Haidian", "area_id": "haidian", "neighborhood_name": {"zh": "海淀区", "en": "Haidian"},
+      "location": {"lat": 39.9999, "lng": 116.2755}, "duration_hours": [3, 6], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Entry and paid interior sites may use separate tickets; verify officially."},
+      "booking": {"required": null, "note": "Confirm passport booking and entry rules before the visit."},
+      "summary": {"zh": "以昆明湖、万寿山和皇家园林建筑组成的大型世界遗产景区，适合预留半天。", "en": "A large World Heritage imperial garden around Kunming Lake and Longevity Hill; allow at least half a day."},
+      "warnings": ["Large site", "Long walking distances", "High holiday crowds"],
+      "accessibility": {"wheelchair": "partial", "note": "Lakeside routes are easier than hill routes; confirm current accessible entrances."},
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "静态数据不确认当天开放状态，请查官方公告。", "en": "Static data does not confirm same-day operations; check official notices."}},
+      "tourism_rating": {"level": "5A", "source": "https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应北京市官方名录中的颐和园。", "en": "The rating applies to the Summer Palace in Beijing's official list."}},
+      "sources": ["https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "bj-haidian-old-summer-palace",
+      "name": {"zh": "圆明园遗址公园", "en": "Old Summer Palace", "pinyin": "Yuánmíngyuán"},
+      "aliases": ["圆明园", "Yuanmingyuan"],
+      "categories": ["history", "park", "archaeology", "photography"],
+      "neighborhood": "Haidian", "area_id": "haidian", "neighborhood_name": {"zh": "海淀区", "en": "Haidian"},
+      "location": {"lat": 40.0081, "lng": 116.2983}, "duration_hours": [2.5, 5], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Some ruins or exhibition areas may require separate tickets."},
+      "booking": {"required": null, "note": "Verify current entry rules on the official channel."},
+      "summary": {"zh": "以清代皇家园林遗址、湖区和展陈为核心的大型遗址公园。", "en": "A large archaeological park centered on Qing imperial-garden ruins, lakes, and exhibitions."},
+      "warnings": ["Large site", "Long walking distances", "Limited shade in some areas"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "开放区域和展陈可能调整，请出发前核验。", "en": "Open zones and exhibitions may change; verify before travel."}},
+      "tourism_rating": {"level": "5A", "source": "https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应北京市官方名录中的圆明园景区。", "en": "The rating applies to the Old Summer Palace scenic area in Beijing's official list."}},
+      "sources": ["https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "bj-xicheng-prince-kung-mansion",
+      "name": {"zh": "恭王府", "en": "Prince Kung's Mansion", "pinyin": "Gōngwángfǔ"},
+      "aliases": ["恭王府博物馆"],
+      "categories": ["history", "museum", "architecture", "garden"],
+      "neighborhood": "Xicheng", "area_id": "xicheng", "neighborhood_name": {"zh": "西城区", "en": "Xicheng"},
+      "location": {"lat": 39.9371, "lng": 116.3862}, "duration_hours": [2, 3.5], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Verify the current ticket price and eligible identity documents."},
+      "booking": {"required": null, "note": "Confirm real-name reservation rules and release windows."},
+      "summary": {"zh": "由清代王府建筑与花园组成的博物馆景区，巷区步行衔接方便。", "en": "A museum complex of Qing mansion architecture and gardens, convenient for a hutong-area walking day."},
+      "warnings": ["High holiday crowds", "Closed days and hours may change"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "请核验当日开放、闭馆日和预约要求。", "en": "Verify same-day opening, closure days, and booking rules."}},
+      "tourism_rating": {"level": "5A", "source": "https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应北京市官方名录中的恭王府景区。", "en": "The rating applies to Prince Kung's Mansion in Beijing's official list."}},
+      "sources": ["https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "bj-chaoyang-olympic-park",
+      "name": {"zh": "北京奥林匹克公园", "en": "Beijing Olympic Park", "pinyin": "Běijīng Àolínpǐkè Gōngyuán"},
+      "aliases": ["奥林匹克公园", "鸟巢", "水立方"],
+      "categories": ["architecture", "park", "walking", "nightlife", "photography"],
+      "neighborhood": "Chaoyang", "area_id": "chaoyang", "neighborhood_name": {"zh": "朝阳区", "en": "Chaoyang"},
+      "location": {"lat": 40.0017, "lng": 116.3911}, "duration_hours": [2, 5], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": 0, "note": "Public outdoor areas are generally free; individual venues and events may charge."},
+      "booking": {"required": null, "note": "Venue interiors and events have separate rules; verify each official operator."},
+      "summary": {"zh": "以鸟巢、水立方和中轴公共空间为核心的综合片区，室内场馆需单独安排。", "en": "A broad district centered on the Bird's Nest, Water Cube, and axial public space; venue interiors need separate planning."},
+      "warnings": ["Large site", "Long walking distances", "Event access can change"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "赛事和活动可能改变通行与场馆开放。", "en": "Events may change access and venue operations."}},
+      "tourism_rating": {"level": "5A", "source": "https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应北京市官方名录中的奥林匹克公园整体景区，不代表每个场馆单独为 5A。", "en": "The rating applies to the Olympic Park scenic area as a whole, not each venue individually."}},
+      "sources": ["https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "bj-huairou-mutianyu-great-wall",
+      "name": {"zh": "慕田峪长城", "en": "Mutianyu Great Wall", "pinyin": "Mùtiányù Chángchéng"},
+      "aliases": ["慕田峪"],
+      "categories": ["history", "mountain", "world-heritage", "photography"],
+      "neighborhood": "Huairou", "area_id": "huairou", "neighborhood_name": {"zh": "怀柔区", "en": "Huairou"},
+      "location": {"lat": 40.4319, "lng": 116.5704}, "duration_hours": [5, 8], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Entry, shuttle, cableway, and slideway products may be separate."},
+      "booking": {"required": null, "note": "Verify passport purchase, transport, and last-entry rules."},
+      "summary": {"zh": "位于北京郊区的长城山地景区，需要把市区往返交通计入一整天。", "en": "A mountainous Great Wall section outside central Beijing; plan a full day including transfers."},
+      "warnings": ["Long walking distances", "Steep paths", "Rapid weather changes"],
+      "accessibility": {"wheelchair": "limited", "note": "Steep terrain and wall steps limit access; verify assisted routes."},
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "天气可能影响缆车和山区开放，请当天核验。", "en": "Weather may affect mountain access and cableways; verify on the day."}},
+      "tourism_rating": {"level": "5A", "source": "https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应北京市官方名录中的慕田峪长城景区。", "en": "The rating applies to the Mutianyu Great Wall scenic area in Beijing's official list."}},
+      "sources": ["https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "bj-xicheng-beihai-park",
+      "name": {"zh": "北海公园", "en": "Beihai Park", "pinyin": "Běihǎi Gōngyuán"},
+      "aliases": ["北海"],
+      "categories": ["history", "park", "garden", "architecture", "photography"],
+      "neighborhood": "Xicheng", "area_id": "xicheng", "neighborhood_name": {"zh": "西城区", "en": "Xicheng"},
+      "location": {"lat": 39.9255, "lng": 116.3891}, "duration_hours": [2, 4], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Park and interior-site tickets may differ; verify officially."},
+      "booking": {"required": null, "note": "Check current ticketing and last-entry rules."},
+      "summary": {"zh": "老城中心的皇家园林公园，可与景山或什刹海按片区组合。", "en": "A central imperial garden that combines well with Jingshan or Shichahai by area."},
+      "warnings": ["Long walking distances", "High holiday crowds"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "请核验当天开放区域和游船运营。", "en": "Verify open zones and any boat operations for the day."}},
+      "tourism_rating": {"level": "4A", "source": "https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应北京市官方名录中的北海公园。", "en": "The rating applies to Beihai Park in Beijing's official list."}},
+      "sources": ["https://whlyj.beijing.gov.cn/ggfw/ly/202511/t20251119_4287815.html"], "last_verified": "2026-08-25"
     }
   ]
 }

@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "id": "hangzhou",
+  "name": {"zh": "杭州", "en": "Hangzhou", "pinyin": "Hángzhōu"},
+  "province": {"zh": "浙江", "en": "Zhejiang"},
+  "overview": {"zh": "以西湖、大运河、湿地、茶文化和江南城市生活为核心；千岛湖位于淳安，不能按市中心景点安排。", "en": "A destination centered on West Lake, the Grand Canal, wetlands, tea culture, and Jiangnan urban life; Qiandao Lake is in Chun'an and cannot be planned like a central-city attraction."},
+  "weather": {"forecast_url": "https://www.weather.com.cn/weather/101210101.shtml", "warnings_url": "https://www.nmc.cn/publish/alarm.html", "provider": {"zh": "中国气象局公共气象服务", "en": "China Meteorological Administration public weather service"}, "note": {"zh": "查看杭州实时预报后，再到中央气象台核验降雨、强对流等预警。", "en": "Check Hangzhou's live forecast, then review rain and severe-weather alerts from the National Meteorological Center."}, "last_verified": "2026-08-25"},
+  "tourism_portals": [{"name": {"zh": "杭州市文化广电旅游局", "en": "Hangzhou Municipal Bureau of Culture, Radio, Television and Tourism"}, "url": "http://wgly.hangzhou.gov.cn/cn/", "operator": {"zh": "杭州市文化广电旅游局", "en": "Hangzhou Municipal Bureau of Culture, Radio, Television and Tourism"}, "use_for": {"zh": "查看杭州文旅资讯、城市漫步、公共服务和活动信息。", "en": "Use for Hangzhou tourism news, city walks, public services, and events."}, "last_verified": "2026-08-25"}],
+  "transport": {"international_gateways": [{"zh": "杭州萧山国际机场", "en": "Hangzhou Xiaoshan International Airport"}, {"zh": "杭州东站高速铁路枢纽", "en": "Hangzhou East high-speed railway hub"}], "local": [{"zh": "地铁", "en": "Metro"}, {"zh": "公交车", "en": "Bus"}, {"zh": "出租车和网约车", "en": "Taxi and ride-hailing"}, {"zh": "公共自行车和步行（按天气与规则选择）", "en": "Public bike and walking where weather and rules permit"}, {"zh": "水上巴士或游船（线路和运营需实时核验）", "en": "Water bus or cruise where routes and operations are verified live"}], "notes": [{"zh": "西湖景区道路在节假日可能实施交通管理，应优先查询官方交通提示。", "en": "Roads around West Lake may have holiday traffic controls; check official transport notices first."}, {"zh": "千岛湖位于淳安县，与杭州主城区距离远，建议单独一至两天。", "en": "Qiandao Lake is in Chun'an far from central Hangzhou; dedicate one or two days."}]},
+  "stay_areas": [
+    {"id": "west-lake-east", "name": {"zh": "湖滨及西湖东侧", "en": "Hubin and east side of West Lake"}, "tradeoff": {"zh": "初访西湖、商业和地铁方便；热门日期价格高、人流密集。", "en": "Convenient for a first West Lake visit, shopping, and metro; expensive and crowded on peak dates."}},
+    {"id": "wulin-canal", "name": {"zh": "武林及运河南段", "en": "Wulin and southern Grand Canal"}, "tradeoff": {"zh": "交通和城市服务均衡，适合连接西湖与运河；不在西湖核心岸边。", "en": "Balanced for transport and city services between West Lake and the canal; not directly on the core lakeshore."}},
+    {"id": "xixi-west", "name": {"zh": "西溪及城西", "en": "Xixi and western Hangzhou"}, "tradeoff": {"zh": "湿地和城西目的地方便，前往湖滨夜游需要更长交通。", "en": "Convenient for the wetland and western destinations; longer travel to Hubin evenings."}},
+    {"id": "qiandao-lake", "name": {"zh": "淳安千岛湖镇", "en": "Qiandaohu Town, Chun'an"}, "tradeoff": {"zh": "适合千岛湖一至两日游；不能兼作杭州主城区住宿。", "en": "Suitable for one or two days at Qiandao Lake; not a practical base for central Hangzhou."}}
+  ],
+  "seasonal_advice": [
+    {"months": [3, 4, 5], "clothing": {"zh": "轻便分层并准备防雨外套。", "en": "Light layers with a rain shell."}, "gear": [{"zh": "雨具", "en": "Rain protection"}, {"zh": "驱蚊用品", "en": "Insect repellent"}, {"zh": "舒适步行鞋", "en": "Comfortable walking shoes"}], "risks": [{"zh": "连续降雨和湿滑道路", "en": "Persistent rain and slippery paths"}]},
+    {"months": [6, 7, 8, 9], "clothing": {"zh": "轻薄速干，室内准备薄层。", "en": "Light quick-drying clothes with a thin indoor layer."}, "gear": [{"zh": "防晒用品", "en": "Sun protection"}, {"zh": "雨具", "en": "Rain protection"}, {"zh": "驱蚊用品", "en": "Insect repellent"}], "risks": [{"zh": "高温高湿", "en": "Heat and humidity"}, {"zh": "雷雨或热带天气影响", "en": "Thunderstorm or tropical-weather disruption"}]},
+    {"months": [10, 11], "clothing": {"zh": "分层穿着，湖边和早晚增加防风层。", "en": "Layers with wind protection by the lake and in mornings and evenings."}, "gear": [{"zh": "保湿用品", "en": "Moisturizer"}], "risks": [{"zh": "昼夜温差", "en": "Day-night temperature swings"}]},
+    {"months": [12, 1, 2], "clothing": {"zh": "保暖外套和防风防湿鞋袜。", "en": "Warm outerwear and wind- and moisture-resistant footwear."}, "gear": [{"zh": "手套和雨具", "en": "Gloves and rain protection"}], "risks": [{"zh": "湿冷、结冰或降雪影响", "en": "Damp cold, ice, or snow disruption"}]}
+  ],
+  "culture": [{"zh": "西湖文化景观与宋韵", "en": "West Lake cultural landscape and Song heritage"}, {"zh": "龙井茶文化", "en": "Longjing tea culture"}, {"zh": "京杭大运河与江南手工艺", "en": "Grand Canal and Jiangnan crafts"}, {"zh": "良渚文明", "en": "Liangzhu civilization"}],
+  "foods": [
+    {"name": {"zh": "片儿川", "en": "Pian'erchuan noodles"}, "dietary_notes": [{"zh": "通常含小麦、猪肉和腌菜，素食或低盐需求需确认。", "en": "Usually contains wheat, pork, and preserved vegetables; confirm vegetarian or low-salt needs."}]},
+    {"name": {"zh": "东坡肉", "en": "Dongpo pork"}, "dietary_notes": [{"zh": "猪肉菜肴，酱汁通常含大豆和糖。", "en": "A pork dish whose sauce commonly contains soy and sugar."}]},
+    {"name": {"zh": "龙井虾仁", "en": "Longjing tea shrimp"}, "dietary_notes": [{"zh": "含甲壳类；调味和勾芡成分需确认。", "en": "Contains shellfish; confirm seasoning and starch ingredients."}]}
+  ],
+  "emergency": [
+    {"service": {"zh": "报警求助", "en": "Police"}, "phone": "110", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "火警", "en": "Fire"}, "phone": "119", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "医疗急救", "en": "Ambulance"}, "phone": "120", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"}
+  ],
+  "sources": ["https://cxjw.hangzhou.gov.cn/art/2025/1/27/art_1692623_58918917.html", "https://wgly.hangzhou.gov.cn/art/2024/7/12/art_1229505585_58956471.html", "https://wgly.hangzhou.gov.cn/cn/whhz/sjyc/index.html"],
+  "spots": [
+    {
+      "id": "zj-hz-west-lake", "name": {"zh": "杭州西湖风景名胜区", "en": "Hangzhou West Lake Scenic Area", "pinyin": "Hángzhōu Xīhú"}, "aliases": ["西湖", "West Lake", "断桥", "苏堤", "白堤"],
+      "categories": ["world-heritage", "nature", "history", "walking", "photography", "culture"], "neighborhood": "West Lake", "area_id": "west-lake-east", "neighborhood_name": {"zh": "西湖景区", "en": "West Lake Scenic Area"}, "location": {"lat": 30.2487, "lng": 120.1437}, "duration_hours": [4, 8], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": 0, "note": "Most open lakeside public space is free; individual temples, pagodas, boats, gardens, and shows may charge."}, "booking": {"required": null, "note": "Build a specific shore route and verify each paid interior site or boat separately."},
+      "summary": {"zh": "由湖面、堤岛、山林、寺塔、园林和城市岸线共同构成的大尺度文化景观；一天不能覆盖全部“西湖景点”。", "en": "A large cultural landscape of lake, causeways, islands, hills, temples, pagodas, gardens, and urban shoreline; one day cannot cover every West Lake sight."}, "warnings": ["Large site", "Long walking distances", "High holiday crowds", "Event access can change"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "开放公共空间与单独运营景点、游船和交通管制需分别核验。", "en": "Verify open public space, separately operated sights, boats, and traffic controls independently."}},
+      "tourism_rating": {"level": "5A", "source": "https://cxjw.hangzhou.gov.cn/art/2025/1/27/art_1692623_58918917.html", "last_verified": "2026-08-25", "scope_note": {"zh": "5A 等级对应杭州西湖风景名胜区整体，不应自动赋给湖区内每个单独景点。", "en": "The 5A rating applies to Hangzhou West Lake Scenic Area as a whole and should not automatically be assigned to every component sight."}}, "sources": ["https://cxjw.hangzhou.gov.cn/art/2025/1/27/art_1692623_58918917.html", "https://wgly.hangzhou.gov.cn/cn/whhz/sjyc/index.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "zj-hz-xixi-wetland", "name": {"zh": "西溪国家湿地公园", "en": "Xixi National Wetland Park", "pinyin": "Xīxī Guójiā Shīdì Gōngyuán"}, "aliases": ["西溪湿地", "Xixi Wetland"],
+      "categories": ["nature", "park", "family", "photography"], "neighborhood": "Xixi", "area_id": "xixi-west", "neighborhood_name": {"zh": "西溪及城西", "en": "Xixi and western Hangzhou"}, "location": {"lat": 30.2707, "lng": 120.0635}, "duration_hours": [4, 7], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Entrances, ticketed zones, boats, and electric vehicles may use separate products."}, "booking": {"required": null, "note": "Choose a gate and land-or-boat route, then verify current products."},
+      "summary": {"zh": "河港、池塘、湿地植被与村落文化交织的大型湿地景区；不同入口之间不能视为同一点。", "en": "A large wetland of waterways, ponds, vegetation, and settlement heritage; different gates should not be treated as one point."}, "warnings": ["Large site", "Long walking distances", "Insects in warm months", "Slippery paths after rain"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "船班、入口和部分区域可能受水位、天气或维护影响。", "en": "Boats, gates, and zones may be affected by water level, weather, or maintenance."}},
+      "tourism_rating": {"level": "5A", "source": "https://cxjw.hangzhou.gov.cn/art/2025/1/27/art_1692623_58918917.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应杭州官方材料中的西溪湿地旅游区整体。", "en": "The rating applies to the Xixi Wetland tourism area as a whole in Hangzhou's official material."}}, "sources": ["https://cxjw.hangzhou.gov.cn/art/2025/1/27/art_1692623_58918917.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "zj-hz-chunan-qiandao-lake", "name": {"zh": "千岛湖风景名胜区", "en": "Qiandao Lake Scenic Area", "pinyin": "Qiāndǎohú"}, "aliases": ["千岛湖", "Qiandao Lake"],
+      "categories": ["nature", "photography", "family", "park"], "neighborhood": "Chun'an", "area_id": "qiandao-lake", "neighborhood_name": {"zh": "淳安千岛湖", "en": "Qiandao Lake, Chun'an"}, "location": {"lat": 29.5952, "lng": 119.0274}, "duration_hours": [7, 8], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Lake sectors, cruises, islands, and transport are sold in varying products."}, "booking": {"required": null, "note": "Confirm departure pier, cruise route, last boarding, and return transport."},
+      "summary": {"zh": "位于淳安县的大型湖区目的地，距离杭州主城区远；至少独立安排一整天，舒适游更适合住一晚。", "en": "A major lake destination in Chun'an far from central Hangzhou; allow a full separate day, preferably an overnight for a comfortable visit."}, "warnings": ["Long transfer from city center", "Large site", "Weather-dependent boats", "Strong sun exposure"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "游船、岛屿和码头运营受天气、水况与季节影响。", "en": "Cruises, islands, and pier operations depend on weather, water, and season."}},
+      "tourism_rating": {"level": "5A", "source": "https://cxjw.hangzhou.gov.cn/art/2025/1/27/art_1692623_58918917.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应杭州官方材料中的千岛湖风景名胜区整体。", "en": "The rating applies to Qiandao Lake Scenic Area as a whole in Hangzhou's official material."}}, "sources": ["https://cxjw.hangzhou.gov.cn/art/2025/1/27/art_1692623_58918917.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "zj-hz-west-lake-leifeng-pagoda", "name": {"zh": "雷峰塔景区", "en": "Leifeng Pagoda Scenic Area", "pinyin": "Léifēng Tǎ"}, "aliases": ["雷峰塔", "Leifeng Pagoda"],
+      "categories": ["history", "architecture", "culture", "photography"], "neighborhood": "West Lake South", "area_id": "west-lake-east", "neighborhood_name": {"zh": "西湖南线", "en": "Southern West Lake"}, "location": {"lat": 30.2311, "lng": 120.1483}, "duration_hours": [1.5, 3], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "This is a separately ticketed attraction within the broader West Lake landscape."}, "booking": {"required": null, "note": "Verify current entry, lift access, and last admission."},
+      "summary": {"zh": "西湖南岸的塔景观与登高观景点，是西湖整体中的单独收费单点；本项目暂不标注其 A 级等级，等待逐项官方证据。", "en": "A pagoda and elevated viewpoint on West Lake's south shore, separately ticketed within the wider landscape; this dataset leaves its A-level unlabelled pending attraction-specific official evidence."}, "warnings": ["High holiday crowds", "Steep paths"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "请核验塔内开放、设备运行和入场时间。", "en": "Verify interior access, equipment operation, and entry times."}},
+      "sources": ["https://wgly.hangzhou.gov.cn/art/2024/7/12/art_1229505585_58956471.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "zj-hz-grand-canal", "name": {"zh": "京杭大运河·杭州景区", "en": "Beijing–Hangzhou Grand Canal, Hangzhou Scenic Area", "pinyin": "Jīng-Háng Dàyùnhé"}, "aliases": ["京杭大运河杭州景区", "杭州运河", "拱宸桥", "Grand Canal Hangzhou"],
+      "categories": ["world-heritage", "history", "walking", "culture", "local-life", "photography"], "neighborhood": "Gongshu", "area_id": "wulin-canal", "neighborhood_name": {"zh": "拱墅运河沿线", "en": "Grand Canal corridor in Gongshu"}, "location": {"lat": 30.3197, "lng": 120.1410}, "duration_hours": [3, 6], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": 0, "note": "Public waterfront and streets are generally open; museums, boats, and performances have separate rules."}, "booking": {"required": null, "note": "Choose a specific segment and verify museums, boats, and night programs separately."},
+      "summary": {"zh": "不是单一入口景点，而是沿运河分布的桥梁、街区、博物馆和公共滨水空间；可从拱宸桥、桥西、小河直街中选择一个紧凑片区。", "en": "Not a single-gate attraction but a corridor of bridges, neighborhoods, museums, and public waterfront; choose a compact cluster around Gongchen Bridge, Qiaoxi, or Xiaohezhijie."}, "warnings": ["Long walking distances", "Multiple venues and paid experiences", "Event access can change"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "公共空间、博物馆、船班和夜游分别运营。", "en": "Public space, museums, boats, and night programs operate separately."}},
+      "sources": ["https://wgly.hangzhou.gov.cn/cn/whhz/sjyc/index.html", "https://wgly.hangzhou.gov.cn/art/2024/7/12/art_1229505585_58956471.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "zj-hz-yuhang-liangzhu", "name": {"zh": "良渚古城遗址公园", "en": "Archaeological Ruins of Liangzhu City Park", "pinyin": "Liángzhǔ Gǔchéng Yízhǐ"}, "aliases": ["良渚古城", "良渚遗址公园", "Liangzhu City"],
+      "categories": ["world-heritage", "archaeology", "history", "park", "museum"], "neighborhood": "Yuhang", "area_id": "liangzhu", "neighborhood_name": {"zh": "余杭良渚", "en": "Liangzhu, Yuhang"}, "location": {"lat": 30.3945, "lng": 119.9854}, "duration_hours": [4, 7], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "The archaeological park, museum, and related sites are distinct venues."}, "booking": {"required": null, "note": "Confirm the intended venue, passport booking, gates, and shuttle service."},
+      "summary": {"zh": "展示良渚古城、水利系统与稻作文明的大尺度考古遗址公园；良渚博物院是另一个场馆。本项目暂不标注其 A 级等级，等待逐项官方证据。", "en": "A large archaeological park interpreting Liangzhu city, water management, and rice civilization; Liangzhu Museum is a separate venue. Its A-level is left unlabelled pending attraction-specific official evidence."}, "warnings": ["Large site", "Long walking distances", "Limited shade", "Outdoor heat"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "遗址公园、博物院和接驳安排需分别核验。", "en": "Verify the archaeological park, museum, and shuttle operations separately."}},
+      "sources": ["https://wgly.hangzhou.gov.cn/cn/whhz/sjyc/index.html"], "last_verified": "2026-08-25"
+    }
+  ]
+}

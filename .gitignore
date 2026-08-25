@@ -7,4 +7,4 @@ build/
 dist/
 *.egg-info/
 .DS_Store
-
+.china-travel-kit.log

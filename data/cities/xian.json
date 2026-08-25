@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "id": "xian",
+  "name": {"zh": "西安", "en": "Xi'an", "pinyin": "Xī'ān"},
+  "province": {"zh": "陕西", "en": "Shaanxi"},
+  "overview": {"zh": "以周秦汉唐历史、考古博物馆、城墙和大型遗址公园为核心的古都，城东临潼与主城区需要分日规划。", "en": "An ancient capital centered on Zhou-Qin-Han-Tang history, archaeology museums, the city wall, and major heritage parks; eastern Lintong and central Xi'an should be planned on separate days."},
+  "weather": {"forecast_url": "https://www.weather.com.cn/weather/101110101.shtml", "warnings_url": "https://www.nmc.cn/publish/alarm.html", "provider": {"zh": "中国气象局公共气象服务", "en": "China Meteorological Administration public weather service"}, "note": {"zh": "查看西安实时预报后，再到中央气象台核验高温、强对流和大风等预警。", "en": "Check Xi'an's live forecast, then review heat, severe-weather, and wind alerts from the National Meteorological Center."}, "last_verified": "2026-08-25"},
+  "tourism_portals": [{"name": {"zh": "西安市文化和旅游局", "en": "Xi'an Municipal Bureau of Culture and Tourism"}, "url": "https://wlj.xa.gov.cn/", "operator": {"zh": "西安市文化和旅游局", "en": "Xi'an Municipal Bureau of Culture and Tourism"}, "use_for": {"zh": "查看西安文旅新闻、行业公告、公共服务和旅游投诉信息。", "en": "Use for Xi'an tourism news, sector notices, public services, and tourism-complaint information."}, "last_verified": "2026-08-25"}],
+  "transport": {"international_gateways": [{"zh": "西安咸阳国际机场", "en": "Xi'an Xianyang International Airport"}, {"zh": "西安北站高速铁路枢纽", "en": "Xi'an North high-speed railway hub"}], "local": [{"zh": "地铁", "en": "Metro"}, {"zh": "公交车", "en": "Bus"}, {"zh": "出租车和网约车", "en": "Taxi and ride-hailing"}, {"zh": "临潼景区交通（需实时核验）", "en": "Lintong attraction transport requiring live checks"}], "notes": [{"zh": "兵马俑和华清宫位于临潼，市中心往返应按一日行程计算，并核验正规交通。", "en": "The Terracotta Army and Huaqing Palace are in Lintong; treat central-city transfers as a day trip and verify legitimate transport."}, {"zh": "博物馆、城墙和演出预约与开放时间不保存在静态数据中。", "en": "Museum, city-wall, and performance reservations and hours are not stored in static data."}]},
+  "stay_areas": [
+    {"id": "bell-drum-tower", "name": {"zh": "钟鼓楼及城墙内", "en": "Bell and Drum Towers inside the City Wall"}, "tradeoff": {"zh": "老城步行和地铁方便，夜间热闹；热门街区可能嘈杂拥挤。", "en": "Convenient for old-city walking and metro access; lively but potentially noisy and crowded."}},
+    {"id": "dayanta-qujiang", "name": {"zh": "大雁塔及曲江", "en": "Giant Wild Goose Pagoda and Qujiang"}, "tradeoff": {"zh": "夜游、演艺和亲子设施集中；前往城墙西北侧需换乘。", "en": "Concentrated in evening attractions, performances, and family facilities; requires transfers to the northwest old city."}},
+    {"id": "lintong", "name": {"zh": "临潼", "en": "Lintong"}, "tradeoff": {"zh": "适合兵马俑和华清宫的早出晚归或一晚停留；不便覆盖主城区。", "en": "Useful for early access or an overnight around the Terracotta Army and Huaqing Palace; inconvenient for central-city coverage."}}
+  ],
+  "seasonal_advice": [
+    {"months": [3, 4, 5], "clothing": {"zh": "分层穿着并准备防风外套。", "en": "Layers with a windproof jacket."}, "gear": [{"zh": "防晒用品", "en": "Sun protection"}, {"zh": "舒适步行鞋", "en": "Comfortable walking shoes"}], "risks": [{"zh": "空气干燥和偶发扬尘", "en": "Dry air and occasional dust"}]},
+    {"months": [6, 7, 8], "clothing": {"zh": "轻薄透气衣物。", "en": "Light, breathable clothing."}, "gear": [{"zh": "防晒用品", "en": "Sun protection"}, {"zh": "补水用品", "en": "Water bottle"}, {"zh": "雨具", "en": "Rain protection"}], "risks": [{"zh": "高温和强日照", "en": "Heat and strong sun"}, {"zh": "强降雨", "en": "Heavy rain"}]},
+    {"months": [9, 10, 11], "clothing": {"zh": "分层穿着，深秋增加保暖外套。", "en": "Layers, adding warmer outerwear in late autumn."}, "gear": [{"zh": "保湿用品", "en": "Moisturizer"}], "risks": [{"zh": "昼夜温差", "en": "Day-night temperature swings"}]},
+    {"months": [12, 1, 2], "clothing": {"zh": "保暖外套、帽子、手套和防风鞋。", "en": "Warm coat, hat, gloves, and wind-resistant footwear."}, "gear": [{"zh": "润唇膏", "en": "Lip balm"}], "risks": [{"zh": "寒冷、干燥和结冰路面", "en": "Cold, dryness, and icy paths"}]}
+  ],
+  "culture": [{"zh": "周秦汉唐历史与考古", "en": "Zhou-Qin-Han-Tang history and archaeology"}, {"zh": "城墙与里坊城市格局", "en": "City-wall and ward-based urban heritage"}, {"zh": "秦腔与陕西民间艺术", "en": "Qinqiang opera and Shaanxi folk arts"}],
+  "foods": [
+    {"name": {"zh": "肉夹馍", "en": "Roujiamo"}, "dietary_notes": [{"zh": "通常含小麦和猪肉或牛羊肉；清真与非清真店铺需分清。", "en": "Usually contains wheat and pork or beef/lamb; distinguish halal and non-halal venues."}]},
+    {"name": {"zh": "牛羊肉泡馍", "en": "Beef or lamb paomo"}, "dietary_notes": [{"zh": "含小麦，汤底和肉类来源需按饮食要求确认。", "en": "Contains wheat; confirm broth and meat sourcing for dietary needs."}]},
+    {"name": {"zh": "凉皮", "en": "Liangpi noodles"}, "dietary_notes": [{"zh": "常含小麦或米制品、辣椒油、芝麻或花生，配方因店而异。", "en": "May use wheat or rice, chili oil, sesame, or peanuts; recipes vary."}]}
+  ],
+  "emergency": [
+    {"service": {"zh": "报警求助", "en": "Police"}, "phone": "110", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "火警", "en": "Fire"}, "phone": "119", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "医疗急救", "en": "Ambulance"}, "phone": "120", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"}
+  ],
+  "sources": ["https://wlj.xa.gov.cn/wlml/lyjq/1.html"],
+  "spots": [
+    {
+      "id": "sn-xa-lintong-qin-mausoleum-museum", "name": {"zh": "秦始皇帝陵博物院", "en": "Emperor Qinshihuang's Mausoleum Site Museum", "pinyin": "Qín Shǐhuángdì Líng Bówùyuàn"}, "aliases": ["兵马俑", "秦始皇兵马俑", "Terracotta Army", "Terracotta Warriors"],
+      "categories": ["archaeology", "museum", "history", "world-heritage"], "neighborhood": "Lintong", "area_id": "lintong", "neighborhood_name": {"zh": "临潼区", "en": "Lintong"}, "location": {"lat": 34.3841, "lng": 109.2785}, "duration_hours": [4, 6], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Verify the official ticket product and included museum zones."}, "booking": {"required": null, "note": "Confirm real-name passport booking, release windows, and entry gate."},
+      "summary": {"zh": "以兵马俑坑和秦陵考古展示为核心的世界遗产博物院；需把临潼往返交通计入日程。", "en": "A World Heritage museum centered on the Terracotta Army pits and Qin mausoleum archaeology; include Lintong transfers in the day plan."}, "warnings": ["High holiday crowds", "Long transfer from city center", "Large site"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "请核验预约、开放区域和官方接驳安排。", "en": "Verify reservations, open zones, and official transfers."}},
+      "tourism_rating": {"level": "5A", "source": "https://wlj.xa.gov.cn/wlml/lyjq/1.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应西安市官方名录中的秦始皇帝陵博物院。", "en": "The rating applies to Emperor Qinshihuang's Mausoleum Site Museum in Xi'an's official list."}}, "sources": ["https://wlj.xa.gov.cn/wlml/lyjq/1.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "sn-xa-lintong-huaqing-palace", "name": {"zh": "华清宫景区", "en": "Huaqing Palace Scenic Area", "pinyin": "Huáqīng Gōng"}, "aliases": ["华清池", "Huaqing Palace"],
+      "categories": ["history", "garden", "architecture", "culture"], "neighborhood": "Lintong", "area_id": "lintong", "neighborhood_name": {"zh": "临潼区", "en": "Lintong"}, "location": {"lat": 34.3648, "lng": 109.2146}, "duration_hours": [2.5, 5], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Day admission, performances, ropeway, and other products may be separate."}, "booking": {"required": null, "note": "Confirm day entry separately from any evening performance."},
+      "summary": {"zh": "结合唐代宫苑历史、温泉遗址和近现代历史的临潼景区，可与兵马俑同日但需控制时长。", "en": "A Lintong scenic area combining Tang palace history, hot-spring remains, and modern history; it can pair with the Terracotta Army if time is controlled."}, "warnings": ["Large site", "Multiple venues and paid experiences", "High holiday crowds"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "日游、演出和山体项目分别核验。", "en": "Verify daytime access, performances, and mountain activities separately."}},
+      "tourism_rating": {"level": "5A", "source": "https://wlj.xa.gov.cn/wlml/lyjq/1.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应西安市官方名录中的华清宫景区整体。", "en": "The rating applies to Huaqing Palace Scenic Area as a whole in Xi'an's official list."}}, "sources": ["https://wlj.xa.gov.cn/wlml/lyjq/1.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "sn-xa-qujiang-dayanta-tang-paradise", "name": {"zh": "大雁塔·大唐芙蓉园景区", "en": "Giant Wild Goose Pagoda–Tang Paradise Scenic Area", "pinyin": "Dàyàntǎ · Dàtáng Fúróngyuán"}, "aliases": ["大雁塔", "大唐芙蓉园", "Giant Wild Goose Pagoda", "Tang Paradise"],
+      "categories": ["history", "architecture", "religion", "park", "nightlife", "culture"], "neighborhood": "Qujiang", "area_id": "dayanta-qujiang", "neighborhood_name": {"zh": "大雁塔及曲江", "en": "Giant Wild Goose Pagoda and Qujiang"}, "location": {"lat": 34.2186, "lng": 108.9642}, "duration_hours": [5, 8], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Pagoda, temple, Tang Paradise, performances, and public squares have separate rules."}, "booking": {"required": null, "note": "Build the plan from specific components and verify each operator."},
+      "summary": {"zh": "官方评级覆盖大雁塔文化片区与大唐芙蓉园的组合景区；公共广场、寺院、登塔、园区和演出不是同一张票。", "en": "The official rating covers a combined scenic area around the Giant Wild Goose Pagoda and Tang Paradise; public squares, temple, pagoda ascent, park, and shows do not share one ticket."}, "warnings": ["Large site", "Long walking distances", "Multiple venues and paid experiences", "Event access can change"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "各组成部分开放与预约规则不同。", "en": "Component venues have different opening and booking rules."}},
+      "tourism_rating": {"level": "5A", "source": "https://wlj.xa.gov.cn/wlml/lyjq/1.html", "last_verified": "2026-08-25", "scope_note": {"zh": "5A 等级对应“大雁塔·大唐芙蓉园景区”这一组合名称，不应自动赋给每个内部单点。", "en": "The 5A rating applies to the combined Giant Wild Goose Pagoda–Tang Paradise Scenic Area and should not automatically be assigned to every component venue."}}, "sources": ["https://wlj.xa.gov.cn/wlml/lyjq/1.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "sn-xa-city-wall-beilin", "name": {"zh": "西安城墙·碑林历史文化景区", "en": "Xi'an City Wall–Beilin Historic Cultural Scenic Area", "pinyin": "Xī'ān Chéngqiáng · Bēilín"}, "aliases": ["西安城墙", "碑林博物馆", "Xi'an City Wall", "Beilin Museum"],
+      "categories": ["history", "architecture", "museum", "walking", "photography"], "neighborhood": "Beilin", "area_id": "bell-drum-tower", "neighborhood_name": {"zh": "城墙内及碑林", "en": "Inside the City Wall and Beilin"}, "location": {"lat": 34.2559, "lng": 108.9420}, "duration_hours": [4, 7], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "City Wall and Beilin Museum are distinct admissions and locations."}, "booking": {"required": null, "note": "Verify each component's gate, closure day, and entry requirements."},
+      "summary": {"zh": "官方评级将西安城墙与碑林历史文化资源组合呈现；实际游览应分别核对入口和票务，可按南门—碑林片区衔接。", "en": "The official rating combines the City Wall and Beilin heritage resources; in practice, check separate entrances and tickets and connect them around the South Gate–Beilin area."}, "warnings": ["Long walking distances", "Outdoor heat", "Multiple venues and paid experiences"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "城墙活动和博物馆闭馆安排需分别核验。", "en": "Verify city-wall events and museum closures separately."}},
+      "tourism_rating": {"level": "5A", "source": "https://wlj.xa.gov.cn/wlml/lyjq/1.html", "last_verified": "2026-08-25", "scope_note": {"zh": "5A 等级对应“西安城墙·碑林历史文化景区”组合范围，不表示两个组成单位各自单独为 5A。", "en": "The 5A rating applies to the combined City Wall–Beilin historic scenic area, not necessarily to each component as a standalone 5A site."}}, "sources": ["https://wlj.xa.gov.cn/wlml/lyjq/1.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "sn-xa-weiyang-daming-palace", "name": {"zh": "大明宫国家遗址公园", "en": "Daming Palace National Heritage Park", "pinyin": "Dàmínggōng"}, "aliases": ["大明宫", "Daming Palace"],
+      "categories": ["archaeology", "history", "park", "world-heritage", "museum"], "neighborhood": "Weiyang", "area_id": "daming-palace", "neighborhood_name": {"zh": "大明宫片区", "en": "Daming Palace area"}, "location": {"lat": 34.3039, "lng": 108.9663}, "duration_hours": [3, 6], "best_months": [3, 4, 5, 9, 10, 11],
+      "ticket": {"price_cny": null, "note": "Open park space, archaeological zones, and exhibitions may have different admission rules."}, "booking": {"required": null, "note": "Confirm open gates, exhibitions, and internal transport."},
+      "summary": {"zh": "展示唐代宫城格局与考古遗址的大尺度遗址公园，尺度空旷，适合重视历史空间而非完整古建筑的游客。", "en": "A large archaeological park revealing the Tang palace plan and remains, best for visitors interested in historic space rather than intact ancient buildings."}, "warnings": ["Large site", "Long walking distances", "Limited shade"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "展馆、遗址区和接驳运营需分别核验。", "en": "Verify galleries, archaeological zones, and internal transport separately."}},
+      "tourism_rating": {"level": "5A", "source": "https://wlj.xa.gov.cn/wlml/lyjq/1.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应西安市官方名录中的大明宫国家遗址公园。", "en": "The rating applies to Daming Palace National Heritage Park in Xi'an's official list."}}, "sources": ["https://wlj.xa.gov.cn/wlml/lyjq/1.html"], "last_verified": "2026-08-25"
+    },
+    {
+      "id": "sn-xa-yanta-shaanxi-history-museum", "name": {"zh": "陕西历史博物馆", "en": "Shaanxi History Museum", "pinyin": "Shǎnxī Lìshǐ Bówùguǎn"}, "aliases": ["陕历博", "Shaanxi History Museum"],
+      "categories": ["museum", "history", "archaeology", "art"], "neighborhood": "Yanta", "area_id": "dayanta-qujiang", "neighborhood_name": {"zh": "雁塔区", "en": "Yanta"}, "location": {"lat": 34.2250, "lng": 108.9532}, "duration_hours": [2.5, 5], "best_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "ticket": {"price_cny": null, "note": "General admission and special exhibitions may follow different rules."}, "booking": {"required": null, "note": "High-demand real-name reservations and passport rules must be checked officially."},
+      "summary": {"zh": "系统展示陕西古代文明的重要博物馆，预约需求通常高；不要把未确认的抢票攻略当作规则。", "en": "A major museum presenting ancient Shaanxi civilization with typically high booking demand; do not treat unverified booking tips as official rules."}, "warnings": ["High holiday crowds", "Closed days and hours may change"],
+      "availability": {"status": "unknown", "as_of": "2026-08-25", "note": {"zh": "预约放票、闭馆日和展览状态需实时核验。", "en": "Reservation release, closure days, and exhibition status require live verification."}},
+      "tourism_rating": {"level": "4A", "source": "https://wlj.xa.gov.cn/wlml/lyjq/1.html", "last_verified": "2026-08-25", "scope_note": {"zh": "等级对应西安市官方名录中的陕西历史博物馆。", "en": "The rating applies to Shaanxi History Museum in Xi'an's official list."}}, "sources": ["https://wlj.xa.gov.cn/wlml/lyjq/1.html"], "last_verified": "2026-08-25"
+    }
+  ]
+}

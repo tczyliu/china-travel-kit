@@ -3,24 +3,135 @@
   "$id": "https://example.org/china-travel-kit/city.schema.json",
   "title": "China Travel Kit city",
   "type": "object",
-  "required": ["schema_version", "id", "name", "province", "overview", "sources", "spots"],
+  "required": ["schema_version", "id", "name", "province", "overview", "weather", "tourism_portals", "transport", "stay_areas", "seasonal_advice", "culture", "foods", "emergency", "sources", "spots"],
   "properties": {
-    "schema_version": {"const": 1},
+    "schema_version": {"const": 2},
     "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
     "name": {"$ref": "#/$defs/name"},
     "province": {"$ref": "#/$defs/name"},
     "overview": {"type": "object", "required": ["zh", "en"]},
+    "weather": {
+      "type": "object",
+      "required": ["forecast_url", "warnings_url", "provider", "note", "last_verified"],
+      "properties": {
+        "forecast_url": {"type": "string", "format": "uri"},
+        "warnings_url": {"type": "string", "format": "uri"},
+        "provider": {"$ref": "#/$defs/bilingual"},
+        "note": {"$ref": "#/$defs/bilingual"},
+        "last_verified": {"type": "string", "format": "date"}
+      }
+    },
+    "tourism_portals": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "url", "operator", "use_for", "last_verified"],
+        "properties": {
+          "name": {"$ref": "#/$defs/bilingual"},
+          "url": {"type": "string", "format": "uri"},
+          "operator": {"$ref": "#/$defs/bilingual"},
+          "use_for": {"$ref": "#/$defs/bilingual"},
+          "last_verified": {"type": "string", "format": "date"}
+        }
+      }
+    },
+    "transport": {
+      "type": "object",
+      "required": ["international_gateways", "local", "notes"],
+      "properties": {
+        "international_gateways": {"type": "array", "items": {"$ref": "#/$defs/bilingual"}},
+        "local": {"type": "array", "items": {"$ref": "#/$defs/bilingual"}},
+        "notes": {"type": "array", "items": {"$ref": "#/$defs/bilingual"}}
+      }
+    },
+    "stay_areas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "tradeoff"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "name": {"$ref": "#/$defs/name"},
+          "tradeoff": {"$ref": "#/$defs/bilingual"}
+        }
+      }
+    },
+    "seasonal_advice": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["months", "clothing", "gear", "risks"],
+        "properties": {
+          "months": {"type": "array", "minItems": 1, "items": {"type": "integer", "minimum": 1, "maximum": 12}},
+          "clothing": {"$ref": "#/$defs/bilingual"},
+          "gear": {"type": "array", "items": {"$ref": "#/$defs/bilingual"}},
+          "risks": {"type": "array", "items": {"$ref": "#/$defs/bilingual"}}
+        }
+      }
+    },
+    "culture": {"type": "array", "items": {"$ref": "#/$defs/bilingual"}},
+    "foods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "dietary_notes"],
+        "properties": {
+          "name": {"$ref": "#/$defs/name"},
+          "dietary_notes": {"type": "array", "items": {"$ref": "#/$defs/bilingual"}}
+        }
+      }
+    },
+    "emergency": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["service", "phone", "scope", "source", "last_verified"],
+        "properties": {
+          "service": {"$ref": "#/$defs/bilingual"},
+          "phone": {"type": "string"},
+          "scope": {"type": "string"},
+          "source": {"type": "string", "format": "uri"},
+          "last_verified": {"type": "string", "format": "date"}
+        }
+      }
+    },
     "sources": {"type": "array", "minItems": 1, "items": {"type": "string", "format": "uri"}},
     "spots": {
       "type": "array",
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["id", "name", "categories", "neighborhood", "location", "duration_hours", "best_months", "ticket", "booking", "summary", "warnings", "sources", "last_verified"],
+        "required": ["id", "name", "categories", "neighborhood", "area_id", "neighborhood_name", "location", "duration_hours", "best_months", "ticket", "booking", "summary", "warnings", "sources", "last_verified"],
         "properties": {
           "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
           "name": {"$ref": "#/$defs/name"},
           "categories": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "area_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "neighborhood_name": {"$ref": "#/$defs/name"},
+          "availability": {
+            "type": "object",
+            "required": ["status", "as_of", "note"],
+            "properties": {
+              "status": {"enum": ["open", "temporarily-closed", "unknown"]},
+              "as_of": {"type": "string", "format": "date"},
+              "until": {"type": ["string", "null"], "format": "date"},
+              "note": {"$ref": "#/$defs/bilingual"}
+            }
+          },
+          "tourism_rating": {
+            "type": "object",
+            "required": ["level", "source", "last_verified", "scope_note"],
+            "properties": {
+              "level": {"enum": ["5A", "4A"]},
+              "source": {"type": "string", "format": "uri"},
+              "last_verified": {"type": "string", "format": "date"},
+              "scope_note": {"$ref": "#/$defs/bilingual"}
+            }
+          },
           "duration_hours": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number", "minimum": 0}},
           "best_months": {"type": "array", "items": {"type": "integer", "minimum": 1, "maximum": 12}},
           "sources": {"type": "array", "minItems": 1, "items": {"type": "string", "format": "uri"}},
@@ -30,6 +141,11 @@
     }
   },
   "$defs": {
+    "bilingual": {
+      "type": "object",
+      "required": ["zh", "en"],
+      "properties": {"zh": {"type": "string"}, "en": {"type": "string"}}
+    },
     "name": {
       "type": "object",
       "required": ["zh", "en"],
@@ -37,4 +153,3 @@
     }
   }
 }
-

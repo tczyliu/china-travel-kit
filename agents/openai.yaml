@@ -1,0 +1,7 @@
+interface:
+  display_name: "华行志 · China Travel Planner"
+  short_description: "v0.4.0 · 双语、可溯源的中国入境自由行规划与官方信息核验"
+  brand_color: "#B63A2B"
+  default_prompt: "Use $china-travel-kit to turn my dates, travelers, interests, pace, and must-see places into a bilingual China trip draft with official live-check links."
+policy:
+  allow_implicit_invocation: true

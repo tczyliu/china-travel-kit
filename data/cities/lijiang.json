@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "lijiang",
   "name": {"zh": "丽江", "en": "Lijiang", "pinyin": "Lìjiāng"},
   "province": {"zh": "云南", "en": "Yunnan"},
@@ -7,30 +7,32 @@
     "zh": "高海拔古城与山地自然景观结合的滇西北目的地。",
     "en": "A northwestern Yunnan destination combining a high-altitude old town with mountain landscapes."
   },
+  "weather": {"forecast_url": "https://www.weather.com.cn/weather/101291401.shtml", "warnings_url": "https://www.nmc.cn/publish/alarm.html", "provider": {"zh": "中国气象局公共气象服务", "en": "China Meteorological Administration public weather service"}, "note": {"zh": "查看丽江实时预报后，再到中央气象台核验山地天气、降雨和大风等预警。", "en": "Check Lijiang's live forecast, then review mountain-weather, rain, and wind alerts from the National Meteorological Center."}, "last_verified": "2026-08-25"},
+  "tourism_portals": [{"name": {"zh": "信用中国（云南丽江）· 诚信文旅", "en": "Credit China Lijiang · Culture and Tourism"}, "url": "https://credit.lijiang.gov.cn/sy_cxwlx.html", "operator": {"zh": "丽江市发展和改革委员会", "en": "Lijiang Municipal Development and Reform Commission"}, "use_for": {"zh": "查看丽江市文化和旅游局等部门发布的文旅诚信、市场秩序和官方公告；原文旅局独立门户当前连接不稳定。", "en": "Use for official tourism-credit, market-order, and visitor notices from Lijiang authorities; the bureau's standalone legacy portal is currently unreliable."}, "last_verified": "2026-08-25"}],
   "transport": {
-    "international_gateways": ["Lijiang Sanyi International Airport"],
-    "local": ["Bus", "Taxi and ride-hailing", "Tourist shuttle where available"],
-    "notes": ["Mountain travel times are weather-sensitive; verify routes locally."]
+    "international_gateways": [{"zh": "丽江三义国际机场", "en": "Lijiang Sanyi International Airport"}],
+    "local": [{"zh": "公交车", "en": "Bus"}, {"zh": "出租车和网约车", "en": "Taxi and ride-hailing"}, {"zh": "景区专线车（如有）", "en": "Tourist shuttle where available"}],
+    "notes": [{"zh": "山地交通时间容易受天气影响，请在当地核验路线。", "en": "Mountain travel times are weather-sensitive; verify routes locally."}]
   },
   "stay_areas": [
-    {"name": "Dayan Old Town edge", "tradeoff": "Walkable access with easier luggage handling than inner lanes; can be noisy."},
-    {"name": "Shuhe", "tradeoff": "Quieter atmosphere; farther from some central services."}
+    {"id": "dayan-old-town-edge", "name": {"zh": "大研古城外围", "en": "Dayan Old Town edge"}, "tradeoff": {"zh": "步行进入古城方便，搬运行李比古城小巷容易，但部分区域可能较嘈杂。", "en": "Walkable access with easier luggage handling than inner lanes; can be noisy."}},
+    {"id": "shuhe", "name": {"zh": "束河", "en": "Shuhe"}, "tradeoff": {"zh": "氛围相对安静，但距离部分市中心服务较远。", "en": "Quieter atmosphere; farther from some central services."}}
   ],
   "seasonal_advice": [
-    {"months": [3, 4, 5], "clothing": "Layers, warm outerwear for mornings, and sun protection.", "gear": ["Sunscreen", "Hat"], "risks": ["Altitude", "Strong ultraviolet exposure"]},
-    {"months": [6, 7, 8, 9], "clothing": "Layers with a waterproof shell.", "gear": ["Rain protection", "Insect repellent"], "risks": ["Rain", "Slippery stone paths", "Altitude"]},
-    {"months": [10, 11], "clothing": "Warm layers for large day-night temperature changes.", "gear": ["Sunscreen"], "risks": ["Altitude", "Dry air"]},
-    {"months": [12, 1, 2], "clothing": "Insulated layers and wind protection.", "gear": ["Sunscreen"], "risks": ["Cold", "Altitude", "Strong ultraviolet exposure"]}
+    {"months": [3, 4, 5], "clothing": {"zh": "分层穿着，早晨准备保暖外套并注意防晒。", "en": "Layers, warm outerwear for mornings, and sun protection."}, "gear": [{"zh": "防晒霜", "en": "Sunscreen"}, {"zh": "遮阳帽", "en": "Hat"}], "risks": [{"zh": "高海拔", "en": "Altitude"}, {"zh": "紫外线较强", "en": "Strong ultraviolet exposure"}]},
+    {"months": [6, 7, 8, 9], "clothing": {"zh": "分层穿着并准备防水外层。", "en": "Layers with a waterproof shell."}, "gear": [{"zh": "雨具", "en": "Rain protection"}, {"zh": "驱蚊用品", "en": "Insect repellent"}], "risks": [{"zh": "降雨", "en": "Rain"}, {"zh": "石板路湿滑", "en": "Slippery stone paths"}, {"zh": "高海拔", "en": "Altitude"}]},
+    {"months": [10, 11], "clothing": {"zh": "昼夜温差大，准备保暖分层衣物。", "en": "Warm layers for large day-night temperature changes."}, "gear": [{"zh": "防晒霜", "en": "Sunscreen"}], "risks": [{"zh": "高海拔", "en": "Altitude"}, {"zh": "空气干燥", "en": "Dry air"}]},
+    {"months": [12, 1, 2], "clothing": {"zh": "保暖分层并注意防风。", "en": "Insulated layers and wind protection."}, "gear": [{"zh": "防晒霜", "en": "Sunscreen"}], "risks": [{"zh": "寒冷", "en": "Cold"}, {"zh": "高海拔", "en": "Altitude"}, {"zh": "紫外线较强", "en": "Strong ultraviolet exposure"}]}
   ],
-  "culture": ["Naxi heritage", "Dongba culture", "Traditional courtyard architecture"],
+  "culture": [{"zh": "纳西文化遗产", "en": "Naxi heritage"}, {"zh": "东巴文化", "en": "Dongba culture"}, {"zh": "传统院落建筑", "en": "Traditional courtyard architecture"}],
   "foods": [
-    {"name": {"zh": "鸡豆凉粉", "en": "Jidou bean jelly"}, "dietary_notes": ["Confirm sauce ingredients and spice level."]},
-    {"name": {"zh": "丽江粑粑", "en": "Lijiang baba flatbread"}, "dietary_notes": ["Contains wheat; fillings vary."]}
+    {"name": {"zh": "鸡豆凉粉", "en": "Jidou bean jelly"}, "dietary_notes": [{"zh": "请确认酱料成分和辣度。", "en": "Confirm sauce ingredients and spice level."}]},
+    {"name": {"zh": "丽江粑粑", "en": "Lijiang baba flatbread"}, "dietary_notes": [{"zh": "含有小麦，馅料可能不同。", "en": "Contains wheat; fillings vary."}]}
   ],
   "emergency": [
-    {"service": "Police", "phone": "110"},
-    {"service": "Fire", "phone": "119"},
-    {"service": "Ambulance", "phone": "120"}
+    {"service": {"zh": "报警求助", "en": "Police"}, "phone": "110", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "火警", "en": "Fire"}, "phone": "119", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"},
+    {"service": {"zh": "医疗急救", "en": "Ambulance"}, "phone": "120", "scope": "Chinese mainland", "source": "https://english.www.gov.cn/2025special/bizexpatsinchina2025", "last_verified": "2026-08-25"}
   ],
   "sources": ["https://www.lijiang.gov.cn/"],
   "spots": [
@@ -40,6 +42,8 @@
       "aliases": ["Dayan Old Town", "大研古城"],
       "categories": ["history", "world-heritage", "walking", "photography"],
       "neighborhood": "Gucheng",
+      "area_id": "gucheng",
+      "neighborhood_name": {"zh": "古城区", "en": "Gucheng"},
       "location": {"lat": 26.8721, "lng": 100.2330, "altitude_m": 2400},
       "duration_hours": [3, 8],
       "best_months": [3, 4, 5, 9, 10, 11],
@@ -57,6 +61,8 @@
       "aliases": ["玉龙雪山"],
       "categories": ["mountain", "nature", "photography"],
       "neighborhood": "Yulong Naxi Autonomous County",
+      "area_id": "yulong-naxi-autonomous-county",
+      "neighborhood_name": {"zh": "玉龙纳西族自治县", "en": "Yulong Naxi Autonomous County"},
       "location": {"lat": 27.0983, "lng": 100.1750},
       "duration_hours": [5, 8],
       "best_months": [1, 2, 3, 4, 5, 10, 11, 12],
