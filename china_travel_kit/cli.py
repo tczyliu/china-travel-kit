@@ -6,6 +6,7 @@ from typing import Any
 
 from . import __version__
 from .api import serve
+from .integrity import verify_integrity
 from .mcp import run as run_mcp
 from .query import (
     discover_areas,
@@ -77,6 +78,7 @@ def build_parser() -> argparse.ArgumentParser:
     stale = commands.add_parser("freshness", help="List unverified or stale records")
     stale.add_argument("--days", type=int, default=365)
 
+    commands.add_parser("integrity", help="Verify that official release files are complete and unchanged")
     commands.add_parser("validate", help="Validate all repository data")
 
     api = commands.add_parser("serve", help="Run the local HTTP API")
@@ -142,6 +144,10 @@ def main(argv: list[str] | None = None) -> int:
             return 2
     elif args.command == "freshness":
         _print(freshness_report(args.days))
+    elif args.command == "integrity":
+        result = verify_integrity()
+        _print(result)
+        return 0 if result["valid"] else 1
     elif args.command == "validate":
         errors = validate_repository()
         _print({"valid": not errors, "errors": errors})

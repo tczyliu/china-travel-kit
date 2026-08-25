@@ -4,7 +4,9 @@
 
 [简体中文](README.zh-CN.md) · [Project analysis (中文)](PROJECT_STRATEGY.zh-CN.md) · [Roadmap](ROADMAP.md) · [Contributing](CONTRIBUTING.md)
 
-Current version: **v0.4.0 Alpha**
+Current version: **v0.5.0 Alpha**
+
+Author contact: WeChat `Changzhanzhang`
 
 Huaxingzhi (technical project name: China Travel Kit) is an open, bilingual Agent Skill and travel knowledge base with an explainable requirement matcher, visual Chinese travel finder, zero-runtime-dependency Python query engine, CLI, HTTP API, and MCP server. It focuses on the parts of China travel that are difficult for international visitors to verify: visitor areas, reservations, passport-specific instructions, seasonal risks, accessibility, emergency context, transport context, official city tourism portals, and data freshness.
 
@@ -37,6 +39,7 @@ python3 -m china_travel_kit prepare 成都 --month 7
 python3 -m china_travel_kit plan 丽江 --days 2 --interests mountain photography
 python3 -m china_travel_kit emergency 丽江
 python3 -m china_travel_kit freshness
+python3 -m china_travel_kit integrity
 ```
 
 ## Agent Skill
@@ -120,6 +123,14 @@ The current alpha provides source-aware sample data, explainable local matching,
 ## Licenses
 
 Code is licensed under the [MIT License](LICENSE). Repository travel data under `data/` is licensed under [CC BY-SA 4.0](DATA_LICENSE.md). Third-party source links remain subject to their respective owners' terms.
+
+## Integrity and brand identity
+
+Official releases include `integrity-manifest.json` and its Ed25519 signature. Run `python3 -m china_travel_kit integrity` to authenticate the manifest with the bundled public key and then verify SHA-256 hashes. Require both `valid: true` and `signature_valid: true`. This detects forged manifests, incomplete copies, or tampering; it does not prevent copying allowed by the licenses.
+
+Maintainers run `scripts/update_integrity_manifest.py` and then `scripts/sign_integrity_manifest.py` before a release. The dedicated private key stays outside the repository and must never be committed.
+
+The code and data licenses do not grant rights to present a modified distribution as an official Huaxingzhi release. See [TRADEMARKS.md](TRADEMARKS.md) and [NOTICE](NOTICE).
 
 ## Disclaimer
 

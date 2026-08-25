@@ -5,6 +5,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlparse
 
 from . import __version__
+from .integrity import verify_integrity
 from .query import (
     discover_areas,
     freshness_report,
@@ -126,6 +127,9 @@ class TravelHandler(BaseHTTPRequestHandler):
                 self._send(200, get_emergency_help(query.get("city", [""])[0]))
             elif parsed.path == "/freshness":
                 self._send(200, freshness_report(int(query.get("days", ["365"])[0])))
+            elif parsed.path == "/integrity":
+                result = verify_integrity()
+                self._send(200 if result["valid"] else 409, result)
             else:
                 self._send(404, {"error": "not_found"})
         except (OSError, ValueError, TypeError) as exc:

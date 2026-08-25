@@ -4,6 +4,8 @@ import json
 import sys
 from typing import Any, TextIO
 
+from . import __version__
+from .integrity import verify_integrity
 from .query import (
     discover_areas,
     freshness_report,
@@ -145,6 +147,13 @@ TOOLS = [
         },
         "annotations": {"readOnlyHint": True, "openWorldHint": False},
     },
+    {
+        "name": "check_package_integrity",
+        "title": "Check Huaxingzhi package integrity",
+        "description": "Verify the official release manifest and detect missing or modified repository files. This detects tampering but does not prevent copying.",
+        "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+        "annotations": {"readOnlyHint": True, "openWorldHint": False},
+    },
 ]
 
 
@@ -167,7 +176,7 @@ def handle_request(message: dict[str, Any]) -> dict[str, Any] | None:
             result = {
                 "protocolVersion": PROTOCOL_VERSION,
                 "capabilities": {"tools": {"listChanged": False}},
-                "serverInfo": {"name": "china-travel-kit", "version": "0.4.0"},
+                "serverInfo": {"name": "china-travel-kit", "version": __version__},
                 "instructions": "Sample, source-aware travel data. Verify stale records and all live conditions before travel.",
             }
         elif method == "ping":
@@ -194,6 +203,8 @@ def handle_request(message: dict[str, Any]) -> dict[str, Any] | None:
                 result = _tool_result(get_emergency_help(args["city"]))
             elif name == "check_data_freshness":
                 result = _tool_result(freshness_report(args.get("max_age_days", 365)))
+            elif name == "check_package_integrity":
+                result = _tool_result(verify_integrity())
             else:
                 result = _tool_result({"error": f"unknown_tool: {name}"}, is_error=True)
         else:

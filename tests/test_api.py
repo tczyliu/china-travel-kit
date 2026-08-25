@@ -9,7 +9,8 @@ class ApiAssetTests(unittest.TestCase):
         body, content_type = read_web_asset("/")
         self.assertIn("text/html", content_type)
         self.assertIn("华行志".encode(), body)
-        self.assertIn(b"v0.4.0", body)
+        self.assertIn(b"v0.5.0", body)
+        self.assertIn(b"Changzhanzhang", body)
         self.assertIn(b'id="search-form"', body)
         self.assertIn(b'id="recommend-form"', body)
         self.assertIn(b'id="areas-form"', body)
@@ -51,7 +52,7 @@ class ApiAssetTests(unittest.TestCase):
         self.assertIn(b"<svg", body)
 
     def test_health_payload_exposes_product_version(self) -> None:
-        self.assertEqual(health_payload(), {"status": "ok", "name": "huaxingzhi", "version": "0.4.0"})
+        self.assertEqual(health_payload(), {"status": "ok", "name": "huaxingzhi", "version": "0.5.0"})
 
 
 if __name__ == "__main__":

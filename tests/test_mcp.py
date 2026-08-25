@@ -23,6 +23,7 @@ class McpTests(unittest.TestCase):
                 "get_trip_preparation",
                 "get_emergency_help",
                 "check_data_freshness",
+                "check_package_integrity",
             },
         )
 
@@ -64,6 +65,19 @@ class McpTests(unittest.TestCase):
         )
         self.assertFalse(response["result"].get("isError", False))
         self.assertIn('"id": "chengdu"', response["result"]["content"][0]["text"])
+
+    def test_call_integrity_tool(self) -> None:
+        response = handle_request(
+            {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "tools/call",
+                "params": {"name": "check_package_integrity", "arguments": {}},
+            }
+        )
+        self.assertFalse(response["result"].get("isError", False))
+        self.assertIn('"valid": true', response["result"]["content"][0]["text"])
+        self.assertIn('"signature_valid": true', response["result"]["content"][0]["text"])
 
 
 if __name__ == "__main__":

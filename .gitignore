@@ -8,3 +8,5 @@ dist/
 *.egg-info/
 .DS_Store
 .china-travel-kit.log
+release-signing-key
+release-signing-key.pub

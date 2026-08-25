@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "name": "huaxingzhi",
+  "version": "0.5.0",
+  "release_tag": "v0.5.0",
+  "official_repository": "https://github.com/tczyliu/china-travel-kit",
+  "generated_on": "2026-08-25",
+  "algorithm": "sha256",
+  "signature": {
+    "algorithm": "ssh-ed25519",
+    "namespace": "huaxingzhi-release",
+    "public_key": "release/huaxingzhi-release-key.pub",
+    "public_key_fingerprint": "SHA256:BxRBwLOMjmWiZEXGr443RJqRAyOXL4bUJ/KzsK2o7bA",
+    "signature_file": "integrity-manifest.json.sig"
+  },
+  "files": {
+    ".github/ISSUE_TEMPLATE/add-city.yml": {
+      "sha256": "5f1f959ca24b471a33877ea2f78a1368d8cf49f28a18827e1fc4f57456c1a85f",
+      "size": 1115
+    },
+    ".github/ISSUE_TEMPLATE/bug.yml": {
+      "sha256": "b1d733b7ef82ba0c1b0025aca85eb277b14321658466d4a7b09d58d286e3b746",
+      "size": 605
+    },
+    ".github/ISSUE_TEMPLATE/config.yml": {
+      "sha256": "5a1193daa191b515c09ed9c21b481c9b5f527eb417dfb71d79b8c77d6f372ac2",
+      "size": 224
+    },
+    ".github/ISSUE_TEMPLATE/data-correction.yml": {
+      "sha256": "80a2c0e3a2b306a7c1e345fc6bd41a383587648cee6084828a95d4cdfe8ce021",
+      "size": 886
+    },
+    ".github/PULL_REQUEST_TEMPLATE.md": {
+      "sha256": "221acdb0816842f0adcc0f444ec6050f8ee7670c81c508603f53f63cdc16440f",
+      "size": 532
+    },
+    ".github/workflows/ci.yml": {
+      "sha256": "95a17702c1c89310cc2a2c17bc85e3157133b8c7d9930aab7b4f86218520cb69",
+      "size": 807
+    },
+    ".github/workflows/freshness.yml": {
+      "sha256": "b948f7fe6fece4bce86199a138d09d82fba0861e5ca01656a20e88faa1ccfdfe",
+      "size": 599
+    },
+    ".gitignore": {
+      "sha256": "3da520e1253560b642ac600d61b5826ee427214814afa15704dd865305ffe654",
+      "size": 156
+    },
+    "CITATION.cff": {
+      "sha256": "cb500fc3f28d0ae21c512f38c10ab33e18a570da8a527d0b441f5b4149c898ab",
+      "size": 270
+    },
+    "CODE_OF_CONDUCT.md": {
+      "sha256": "19d941914a3d8c14ebe19ac667f9a1e213dec1ee8b9c1dbcc160375c627c97c8",
+      "size": 724
+    },
+    "CONTRIBUTING.md": {
+      "sha256": "374fb6a4ddf2342907b358cc80f7ed8d1a254b31bcb3a63948d5737e903f4fd5",
+      "size": 1920
+    },
+    "DATA_LICENSE.md": {
+      "sha256": "d219c1abaf12fdbb4321bb06d4096f5d2475497793d19c32553124cf5d8ec09a",
+      "size": 651
+    },
+    "LICENSE": {
+      "sha256": "804b634fba699ca49dfac45885a55ff7faf22446f82b32c45a0ca2a2e435a752",
+      "size": 1080
+    },
+    "NOTICE": {
+      "sha256": "47681401205d5ac89e788ed9f96a3749e15f220da1ca912c73d43aaaca1b5b39",
+      "size": 949
+    },
+    "PROJECT_STRATEGY.zh-CN.md": {
+      "sha256": "f1bfbafc51956cbafc660f5aebf58057223368a45de885a09ac00ca5953f18a8",
+      "size": 5322
+    },
+    "README.md": {
+      "sha256": "f90dcfe2fa388e893c335a9c5c0bfde049e238e51c375437ce426f32de00a074",
+      "size": 7495
+    },
+    "README.zh-CN.md": {
+      "sha256": "157ddadc17ea945b4ec5e56b6b84576bd275d3bf05f401cd7da16d262cabcea2",
+      "size": 5375
+    },
+    "ROADMAP.md": {
+      "sha256": "e87c8dcc65d235f6a0570e06c13147a82ce0639228fff8c4b25a97563bd6ea36",
+      "size": 2106
+    },
+    "SECURITY.md": {
+      "sha256": "fae51f8c998285d90f45386cc473e68f5cd7f73f2717309c8c96b1a379169fbd",
+      "size": 1266
+    },
+    "SKILL.md": {
+      "sha256": "617042fbd1199e00f9c975ef3cd37c7b12b195adfae692c77611443a90a682f4",
+      "size": 5135
+    },
+    "TRADEMARKS.md": {
+      "sha256": "4d2c3817cff18d8944a82a2eed57ea183a79a848ba0d8ce3090a91091097a94b",
+      "size": 686
+    },
+    "agents/openai.yaml": {
+      "sha256": "fe74932c8cfa2ed9c48a4efa2cf7aae84502a4ea7abddd6146666b65a347f04f",
+      "size": 407
+    },
+    "china_travel_kit/__init__.py": {
+      "sha256": "c355dcfdf22e4240864cd829af657a1fcfb6bccf3207ab5c6a9f7e5cecaa09f6",
+      "size": 90
+    },
+    "china_travel_kit/__main__.py": {
+      "sha256": "76fa916e93e0ae1a6c1bb51dcc0bcf289c014e9f760a47165f8a84401ccf41d7",
+      "size": 49
+    },
+    "china_travel_kit/api.py": {
+      "sha256": "a7d4589913785c0e21ccadbfa39cfe80a0831ee2a3c8e1ed347d560c806fd51b",
+      "size": 6942
+    },
+    "china_travel_kit/cli.py": {
+      "sha256": "2a62c2dcdba827e22a9b9220014a6d03fd1890a1aedd81828f1e12250b5d1947",
+      "size": 6477
+    },
+    "china_travel_kit/integrity.py": {
+      "sha256": "33001f010982a91a04f961a5f868c4b0291552f6da0e855182f428503914e931",
+      "size": 5218
+    },
+    "china_travel_kit/mcp.py": {
+      "sha256": "cbccc8e0b769092406cb12f45f67de873ac7bd63b0c887ec084eb951067e906f",
+      "size": 9972
+    },
+    "china_travel_kit/query.py": {
+      "sha256": "eb2cda1468ca4e3d508585a241d3e23f86c429d9dd027a3b6ef4094b46447f09",
+      "size": 39890
+    },
+    "china_travel_kit/store.py": {
+      "sha256": "0ea8f819a0ad301e3f092c798773e2012783e0ffb78b7bb3680ececc854b25a7",
+      "size": 2253
+    },
+    "china_travel_kit/validation.py": {
+      "sha256": "c5e3b09371c146296f7c093189042187e1f3694c699abaabbdcf6fd7a5d8b087",
+      "size": 8497
+    },
+    "data/cities/beijing.json": {
+      "sha256": "d6abf71c3a6f2e5fc6b5b61e31ae49ca68c0b5fac093991afb1f64c1fc8d1d4e",
+      "size": 18703
+    },
+    "data/cities/chengdu.json": {
+      "sha256": "083e4b4182ab78f35f1d6c400630974c1e3e7fcf107e1b3675e867c2aabdb2f7",
+      "size": 23899
+    },
+    "data/cities/guangzhou.json": {
+      "sha256": "0d42de83266d3439eb22e8aa62f153fca3a9161482914765588a65fa1a3348f9",
+      "size": 17013
+    },
+    "data/cities/hangzhou.json": {
+      "sha256": "82efd50ebbeb306e83b9637b4d2b4c9738c61404c204e143fc8849f3c6772044",
+      "size": 18164
+    },
+    "data/cities/lijiang.json": {
+      "sha256": "83b13d315d82942cf71721ae66e76b456d971969f9a0410faa058843b2af39dc",
+      "size": 7793
+    },
+    "data/cities/shanghai.json": {
+      "sha256": "38b2ae2ab343bbce261303ba05e3a1f3a552946f015f1fd7eddf1bf4e85b3332",
+      "size": 16784
+    },
+    "data/cities/shenzhen.json": {
+      "sha256": "63c92951c726f784d471e6f79f90b91759fc17363b11daf27510f41aa58057f0",
+      "size": 17732
+    },
+    "data/cities/xian.json": {
+      "sha256": "a6ccc24a10523b14a594d1d753adcb2d16f31d4adcc641034331f639f3623f3a",
+      "size": 17778
+    },
+    "data/schema/city.schema.json": {
+      "sha256": "900616fa90ce407ab443cc3fb5fafd1e614a234c1b33b2e4c7a360b229ee2335",
+      "size": 6143
+    },
+    "pyproject.toml": {
+      "sha256": "4c24dcc3b88cd8a60653751185b06a5e1655155ade6b645a296626fd757329d5",
+      "size": 1018
+    },
+    "references/data-expansion.md": {
+      "sha256": "e2b49be0452f98315ba7fd8b0a2bb9f7efc5579a226b2a695e5560485a0c95f6",
+      "size": 2896
+    },
+    "references/itinerary-planning.md": {
+      "sha256": "67f01dd278be7d6c8d837e0d8e0b456f2bb8af4a4a4b322e1595b24e60e2d061",
+      "size": 1349
+    },
+    "references/safety-and-freshness.md": {
+      "sha256": "b1d72e66a1b6f6804b162895005bf9bd68e60505b0bb6da838f4623ab6b6e927",
+      "size": 1878
+    },
+    "release/huaxingzhi-release-key.pub": {
+      "sha256": "eee8d193cc1dfb750b1391453062c4aa5d11dcc10c4b0acd53322d525f451b49",
+      "size": 111
+    },
+    "scripts/sign_integrity_manifest.py": {
+      "sha256": "9d29b641391ba5bb6891bb8456212762a3089d1e95d0da62835111fa1d46c5f3",
+      "size": 973
+    },
+    "scripts/update_integrity_manifest.py": {
+      "sha256": "f7c40d1dfa4405b24b9ea1062ca00ef5a87baf0d89db6506ffe46b81e1fd875d",
+      "size": 1994
+    },
+    "tests/test_api.py": {
+      "sha256": "f588c39c8cae2e1fbc5472163fffacfad4263af6d4256d7346c24840fbf2e88a",
+      "size": 2694
+    },
+    "tests/test_integrity.py": {
+      "sha256": "0bc818f22de15512804e952637236c3cfae8d453b32d46094e2d8099df97253b",
+      "size": 3173
+    },
+    "tests/test_mcp.py": {
+      "sha256": "c5c558a1d60166d20faa87498b1f03daf7d092d319c7fc1b97e3ffdb64630b6c",
+      "size": 3145
+    },
+    "tests/test_query.py": {
+      "sha256": "b2733a660d156e5fc6bda3e126ad5688feeed236d6f2cd047d0c7da130c084d7",
+      "size": 8940
+    },
+    "tests/test_skill.py": {
+      "sha256": "3093dfdaa13d68b9050ba7d0ec982591c888329a93e57c8e47b2c35da14e7312",
+      "size": 1140
+    },
+    "tests/test_validation.py": {
+      "sha256": "58f1976e5d55831e892b4034ba662aed2660f5c0a8fb99ae5d6d4b0f62fbc28f",
+      "size": 2388
+    },
+    "web/app.js": {
+      "sha256": "095caa200dd7d59850d06c5c61ff8c936c6835cc117220efee997f8eca2d00d8",
+      "size": 49983
+    },
+    "web/favicon.svg": {
+      "sha256": "ce2a47f7eff26457fd84d83e24e70629b87fd1114eed7af5048e79d8fb938ef6",
+      "size": 332
+    },
+    "web/index.html": {
+      "sha256": "53c328186a1420be88c5afbaeff272b9e90a11af9cab89e2a5f04d3c5e62044a",
+      "size": 25805
+    },
+    "web/styles.css": {
+      "sha256": "9c43a1ccd989094fbcfe39a965d676b893ced76b1de62973b2428ce124a2c83d",
+      "size": 43909
+    },
+    "启动华行志.command": {
+      "sha256": "171dfd590657dc23e37c655d08809de452cf0fc8f390367e01e5772c6f4367b5",
+      "size": 871
+    }
+  }
+}

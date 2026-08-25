@@ -4,7 +4,6 @@ Unless a file says otherwise, original travel data in the `data/` directory is l
 
 You may share and adapt the data, including commercially, provided that you give appropriate credit, link to the license, indicate changes, and distribute adaptations under the same license.
 
-Suggested attribution: **China Travel Kit contributors, CC BY-SA 4.0**.
+Suggested attribution: **Huaxingzhi contributors, CC BY-SA 4.0**.
 
 Source URLs listed inside records identify references. They are not included in this license, and their content remains subject to its original owner's terms.
-

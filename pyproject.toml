@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "china-travel-kit"
-version = "0.4.0"
+version = "0.5.0"
 description = "Huaxingzhi: explainable, source-aware China inbound travel planning, data, CLI, HTTP API, and MCP server"
 readme = "README.md"
 requires-python = ">=3.10"

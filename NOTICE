@@ -1,0 +1,19 @@
+Huaxingzhi / 华行志
+Copyright (c) 2026 Huaxingzhi contributors
+
+Official repository: https://github.com/tczyliu/china-travel-kit
+Author contact / 作者微信: Changzhanzhang
+
+The software is licensed under the MIT License. Original travel data under
+data/ is licensed under CC BY-SA 4.0 unless a file states otherwise. Source
+links identify references and do not license third-party content.
+
+The names “华行志” and “Huaxingzhi” and the project logo are brand identifiers.
+Their use is governed separately by TRADEMARKS.md and is not granted by the
+software or data licenses.
+
+Use integrity-manifest.json or `python3 -m china_travel_kit integrity` to check
+whether a release copy is complete and unchanged. The official manifest is
+signed with the public key in release/huaxingzhi-release-key.pub. Hashes detect
+file changes and the signature authenticates the manifest; neither prevents
+lawful copying under the applicable licenses.

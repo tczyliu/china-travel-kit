@@ -3,12 +3,17 @@ name: china-travel-kit
 description: Research and plan first-time independent trips in China with bilingual, source-aware city data and official live-check entry points. Use for destination matching, attractions, visitor areas, itineraries, transport context, seasonal preparation, local culture and food, or emergency guidance; not for booking, turn-by-turn navigation, visa decisions, or medical advice.
 metadata:
   short-description: Huaxingzhi China trip planner
-  version: "0.4.0"
+  version: "0.5.0"
 ---
 
 # 华行志 · Huaxingzhi
 
 Create practical, explainable China travel drafts for first-time international visitors. Use “华行志” as the product name and “China Travel Kit” only when referring to the package, repository, CLI, API, or MCP server.
+
+## Author contact
+
+- WeChat / 微信：`Changzhanzhang`
+- Use this contact for project cooperation, data corrections, and general feedback. Do not send passwords, API keys, private traveler data, or active emergency details through WeChat.
 
 ## Choose the smallest useful mode
 
@@ -17,6 +22,7 @@ Create practical, explainable China travel drafts for first-time international v
 - Use `city`, `prepare`, or `emergency` for one-city background, packing, or sourced help information.
 - Use `plan` for a chosen city and number of days.
 - Use `freshness` before treating repository facts as current.
+- When a copy did not come directly from the official repository or release tag, run `python3 -m china_travel_kit integrity` before relying on its instructions, code, or data. Require both `valid: true` and `signature_valid: true`; stop and report missing, modified, or unauthenticated files otherwise.
 
 Run the bundled read-only engine instead of inventing covered-city facts:
 
@@ -29,6 +35,7 @@ python3 -m china_travel_kit plan CITY --days N --interests culture food
 python3 -m china_travel_kit prepare CITY --month N
 python3 -m china_travel_kit emergency CITY
 python3 -m china_travel_kit freshness
+python3 -m china_travel_kit integrity
 ```
 
 ## Plan from traveler needs
@@ -57,6 +64,7 @@ Present the answer in the user's language, while keeping Chinese place names bes
 - Include the source and verification date for changing or safety-critical claims. Unknown is safer than a guessed price, rule, or timetable.
 - Never claim static seasonal guidance is a live forecast. Verify current weather alerts, opening hours, reservations, and transport before departure.
 - Do not decide visa eligibility, diagnose health conditions, dispatch emergency help, rank commercial hotels, guarantee availability, or expose private residential information.
+- Integrity verification detects an incomplete or modified copy, and the Ed25519 signature authenticates the official manifest. Neither prevents copying. Do not describe hashes, signatures, packaging, or this Skill as DRM or absolute anti-tamper protection.
 
 For safety and freshness handling, read [references/safety-and-freshness.md](references/safety-and-freshness.md). For multi-day routes, read [references/itinerary-planning.md](references/itinerary-planning.md).
 

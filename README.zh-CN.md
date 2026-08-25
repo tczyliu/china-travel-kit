@@ -4,7 +4,9 @@
 
 [English](README.md) · [项目分析](PROJECT_STRATEGY.zh-CN.md) · [路线图](ROADMAP.md) · [贡献指南](CONTRIBUTING.md)
 
-当前版本：**v0.4.0 Alpha**
+当前版本：**v0.5.0 Alpha**
+
+作者联系方式：微信 `Changzhanzhang`
 
 华行志（技术项目名 China Travel Kit）是一个面向入境中国旅行的中英双语 Agent Skill 与开放数据项目。它可以根据人数、日期、目的地、兴趣、节奏、预算和行动需求自动匹配当前数据覆盖的最佳方案。同一份带来源、带核验日期的数据，可以通过 Skill、中文可视化查询页、命令行、HTTP API 和 MCP 被人、应用与 AI 助手调用。
 
@@ -35,6 +37,7 @@ python3 -m china_travel_kit areas --city 北京
 python3 -m china_travel_kit prepare 成都 --month 7
 python3 -m china_travel_kit plan 丽江 --days 2 --interests mountain photography
 python3 -m china_travel_kit emergency 丽江
+python3 -m china_travel_kit integrity
 python3 -m china_travel_kit validate
 python3 -m unittest discover -s tests -v
 ```
@@ -71,5 +74,13 @@ python3 -m china_travel_kit mcp
 - 禁止搬运携程、点评、马蜂窝或自媒体内容；
 - 不将本项目作为签证、医疗、法律或应急服务；
 - 高时效信息必须能说明来源和最后核验日期。
+
+## 完整性与品牌保护
+
+官方版本包含 `integrity-manifest.json` 及其 Ed25519 签名。运行 `python3 -m china_travel_kit integrity` 会先用公钥验证清单来源，再用 SHA-256 检查仓库文件是否缺失或被修改；结果必须同时显示 `valid: true` 和 `signature_valid: true`。该检查用于识别伪造清单、不完整副本和篡改，不能阻止许可允许的复制。
+
+维护者发布顺序：先运行 `scripts/update_integrity_manifest.py`，再运行 `scripts/sign_integrity_manifest.py`。专用私钥仅保存在仓库外的本机目录，不得提交到 GitHub。
+
+代码与数据许可不包含“华行志”“Huaxingzhi”及项目标识的品牌授权。转载或修改版可以如实署名来源，但不得冒充官方版本，详见 [TRADEMARKS.md](TRADEMARKS.md) 与 [NOTICE](NOTICE)。
 
 代码采用 [MIT](LICENSE)，`data/` 下的旅行数据采用 [CC BY-SA 4.0](DATA_LICENSE.md)。
